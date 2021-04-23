@@ -1,0 +1,64 @@
+{
+    "name": "brackets/admin-ui",
+    "description": "Administration user interface template",
+    "keywords": [
+        "admin-ui",
+        "template",
+        "administration",
+        "admin",
+        "cms",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Pavol Perdík",
+            "email": "pavol.perdik@brackets.sk",
+            "homepage": "https://www.brackets.sk",
+            "role": "Developer"
+        },
+        {
+            "name": "Matej Minár",
+            "email": "matej.minar@brackets.sk",
+            "homepage": "https://www.brackets.sk",
+            "role": "Developer"
+        },
+        {
+            "name": "Dušan Subally",
+            "email": "dusan.subally@triad.sk",
+            "homepage": "https://www.brackets.sk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5|^7.3.0|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench-browser-kit": "~4.0|~5.0|~6.0",
+        "phpunit/phpunit": "^8.5|^9.0",
+        "mockery/mockery": "0.9.*|^1.0"
+    },
+    "autoload": {
+        "classmap": [],
+        "psr-4": {
+            "Brackets\\AdminUI\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Brackets\\AdminUI\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brackets\\AdminUI\\AdminUIServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "4.0-dev"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/admin.js": "/js/admin.js",
+    "/css/admin.css": "/css/admin.css",
+    "/css/app.css": "/css/app.css",
+    "/js/core.js": "/js/core.js",
+    "/js/ecommerce.js": "/js/ecommerce.js",
+    "/js/location.js": "/js/location.js",
+    "/js/notification.js": "/js/notification.js",
+    "/js/saas.js": "/js/saas.js",
+    "/js/seo.js": "/js/seo.js",
+    "/js/themes.js": "/js/themes.js"
+}

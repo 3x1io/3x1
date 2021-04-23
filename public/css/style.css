@@ -1,0 +1,18 @@
+*[dir=rtl] .ml-auto, *[dir=rtl] .mx-auto {
+    margin-right: 0 !important;
+    position: absolute !important;
+    left: 45px !important;
+}
+
+*[dir=rtl] .card .card-header a {
+    float: left !important;
+}
+
+*[dir=rtl] [type=checkbox]:not(:checked), [type=checkbox]:checked {
+    right: -9999px !important;
+}
+
+*[dir=rtl] .modals,*[dir=rtl] .modal--translation {
+    direction: ltr !important;
+}
+

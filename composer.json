@@ -1,0 +1,106 @@
+{
+    "name": "3x1io/3x1",
+    "type": "project",
+    "description": "Full Stack Web Framework Build in Laravel & Craftable",
+    "keywords": [
+        "framework",
+        "3x1.io"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "ext-json": "*",
+        "arrilot/laravel-widgets": "^3.13",
+        "bigbluebutton/bigbluebutton-api-php": "^2.0",
+        "creativeorange/gravatar": "^1.0",
+        "doctrine/dbal": "~2.3",
+        "fabpot/goutte": "^4.0",
+        "fideloper/proxy": "^4.4",
+        "fruitcake/laravel-cors": "^2.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "infyomlabs/adminlte-templates": "^2.0",
+        "infyomlabs/laravel-generator": "8.0.x-dev",
+        "joisarjignesh/bigbluebutton": "^1.1",
+        "laracasts/utilities": "^3.2",
+        "laravel-notification-channels/messagebird": "^3.0",
+        "laravel/framework": "^8.12",
+        "laravel/helpers": "^1.4",
+        "laravel/legacy-factories": "^1.1",
+        "laravel/sanctum": "^2.8",
+        "laravel/socialite": "^5.1",
+        "laravel/tinker": "^2.5",
+        "laravelcollective/html": "^6.2",
+        "maatwebsite/excel": "^3.1",
+        "milon/barcode": "^8.0",
+        "nwidart/laravel-modules": "^8.2",
+        "nztim/mailchimp": "^4.2",
+        "pusher/pusher-php-server": "^5.0",
+        "realrashid/sweet-alert": "^3.2",
+        "spatie/crawler": "^6.0",
+        "spatie/laravel-backup": "^6.11",
+        "spatie/laravel-medialibrary": "^9.1",
+        "spatie/laravel-permission": "^3.17",
+        "spatie/laravel-server-monitor": "^1.9",
+        "spatie/laravel-sitemap": "^5.9",
+        "spatie/laravel-translatable": "^4.5",
+        "stancl/tenancy": "^3.4",
+        "weidner/goutte": "^2.1"
+    },
+    "require-dev": {
+        "facade/ignition": "^2.5",
+        "fakerphp/faker": "^1.9.1",
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.2",
+        "nunomaduro/collision": "^5.0",
+        "phpunit/phpunit": "^9.3.3"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "files":  [
+            "app/helpers.php"
+        ],
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/",
+            "Brackets\\AdminAuth\\": "app/Core/brackets/admin-auth/src/",
+            "Brackets\\AdminGenerator\\": "app/Core/brackets/admin-generator/src/",
+            "Brackets\\AdminListing\\": "app/Core/brackets/admin-listing/src/",
+            "Brackets\\AdminUI\\": "app/Core/brackets/admin-ui/src/",
+            "Brackets\\AdminTranslations\\": "app/Core/brackets/admin-translations/src/",
+            "Brackets\\AdvancedLogger\\": "app/Core/brackets/advanced-logger/src/",
+            "Brackets\\Craftable\\": "app/Core/brackets/craftable/src/",
+            "Brackets\\Media\\": "app/Core/brackets/media/src/",
+            "Brackets\\Translatable\\": "app/Core/brackets/translatable/src/",
+            "Modules\\": "Modules/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    }
+}

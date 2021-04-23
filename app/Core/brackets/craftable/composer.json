@@ -1,0 +1,68 @@
+{
+    "name": "brackets/craftable",
+    "description": "Administration toolkit for Laravel 8 - starting point for developing administration interface",
+    "keywords": [
+        "craftable",
+        "crud",
+        "brackets",
+        "admin",
+        "administration",
+        "toolkit",
+        "framework",
+        "cms",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Pavol Perdík",
+            "email": "pavol.perdik@brackets.sk",
+            "homepage": "https://www.brackets.sk",
+            "role": "Developer"
+        },
+        {
+            "name": "David Běhal",
+            "email": "david.behal@brackets.sk",
+            "homepage": "https://www.brackets.sk",
+            "role": "Developer"
+        },
+        {
+            "name": "Richard Dominik",
+            "email": "richard.dominik@brackets.sk",
+            "homepage": "https://www.brackets.sk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4.0|^8.0",
+        "brackets/admin-auth": "^7.0",
+        "brackets/admin-listing": "^3.0",
+        "brackets/admin-translations": "^4.0",
+        "brackets/admin-ui": "^4.0",
+        "brackets/advanced-logger": "^2.0",
+        "brackets/media": "^6.0",
+        "brackets/translatable": "^2.0",
+        "illuminate/support": "^6.0|^7.0|^8.0",
+        "laravel/legacy-factories": "^1.1",
+        "spatie/laravel-permission": "^3.0",
+        "spatie/laravel-backup": "^6.0",
+        "maatwebsite/excel": "^3.1"
+    },
+    "autoload": {
+        "classmap": [],
+        "psr-4": {
+            "Brackets\\Craftable\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brackets\\Craftable\\CraftableServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "7.0-dev"
+        }
+    }
+}

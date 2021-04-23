@@ -1,0 +1,14 @@
+version: '3'
+services:
+  testing:
+    image: postgres:latest
+    ports:
+     - "${DOCKER_PGSQL_TEST_PORT:-5555}:5432"
+    environment:
+      POSTGRES_USER: "testing"
+      POSTGRES_PASSWORD: "secret"
+      POSTGRES_DB: "testing"
+      PGPASSWORD: "testing"
+    volumes:
+     - ./docker/testing/db:/var/lib/postgresql/data
+     - ./docker/testing/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d

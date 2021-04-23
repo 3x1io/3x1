@@ -1,0 +1,62 @@
+{
+    "name": "brackets/translatable",
+    "description": "Make your Eloquent models and other content translated into multiple languages",
+    "keywords": [
+        "translations",
+        "eloquent",
+        "language",
+        "locale",
+        "translate",
+        "localization",
+        "admin",
+        "cms",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Pavol Perdík",
+            "email": "pavol.perdik@brackets.sk",
+            "homepage": "https://www.brackets.sk",
+            "role": "Developer"
+        },
+        {
+            "name": "David Běhal",
+            "email": "david.behal@brackets.sk",
+            "homepage": "https://www.brackets.sk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5|^7.3.0|^8.0",
+        "laravel/framework": "6.*|7.*|8.*",
+        "spatie/laravel-translatable": "^4.2",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5|^9.0",
+        "orchestra/testbench": "~4.0|~5.0|~6.0"
+    },
+    "autoload": {
+        "classmap": [],
+        "psr-4": {
+            "Brackets\\Translatable\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Brackets\\Translatable\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brackets\\Translatable\\TranslatableServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    }
+}

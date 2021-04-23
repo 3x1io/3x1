@@ -1,0 +1,51 @@
+{
+    "name": "brackets/advanced-logger",
+    "description": "Advanced logger",
+    "keywords": [
+        "logger",
+        "request logger"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "David Běhal",
+            "email": "david.behal@brackets.sk",
+            "homepage": "https://www.brackets.sk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5|^7.3.0|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0",
+        "illuminate/http": "^6.0|^7.0|^8.0",
+        "monolog/monolog": "^1.12|^2.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "laravel/framework": "6.*|7.*|8.*",
+        "phpunit/phpunit": "^8.5|^9.0",
+        "orchestra/testbench": "~4.0|~5.0|~6.0"
+    },
+    "autoload": {
+        "classmap": [],
+        "psr-4": {
+            "Brackets\\AdvancedLogger\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Brackets\\AdvancedLogger\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brackets\\AdvancedLogger\\AdvancedLoggerServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    }
+}

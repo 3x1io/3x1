@@ -1,0 +1,66 @@
+{
+    "name": "brackets/admin-listing",
+    "description": "Query-building helper for listing of Eloquent models",
+    "keywords": [
+        "listing",
+        "eloquent",
+        "datatable",
+        "admin",
+        "cms",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Pavol Perdík",
+            "email": "pavol.perdik@brackets.sk",
+            "homepage": "https://www.brackets.sk",
+            "role": "Developer"
+        },
+        {
+            "name": "David Běhal",
+            "email": "david.behal@brackets.sk",
+            "homepage": "https://www.brackets.sk",
+            "role": "Developer"
+        },
+        {
+            "name": "Richard Dominik",
+            "email": "richard.dominik@brackets.sk",
+            "homepage": "https://www.brackets.sk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5|^7.3.0|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*|^1.0",
+        "phpunit/phpunit": "^8.5|^9.0",
+        "orchestra/testbench": "~4.0|~5.0|~6.0",
+        "brackets/translatable": "^2.0"
+    },
+    "autoload": {
+        "classmap": [],
+        "psr-4": {
+            "Brackets\\AdminListing\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Brackets\\AdminListing\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brackets\\AdminListing\\AdminListingServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "3.0-dev"
+        }
+    }
+}

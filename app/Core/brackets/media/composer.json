@@ -1,0 +1,63 @@
+{
+    "name": "brackets/media",
+    "description": "Associate files with Eloquent models",
+    "keywords": [
+        "media",
+        "medialibrary",
+        "images",
+        "cms",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Pavol Perdík",
+            "email": "pavol.perdik@brackets.sk",
+            "homepage": "https://www.brackets.sk",
+            "role": "Developer"
+        },
+        {
+            "name": "Marek Kratochvíla",
+            "email": "marek.kratochvila@brackets.sk",
+            "homepage": "https://www.brackets.sk",
+            "role": "Developer"
+        },
+        {
+            "name": "David Běhal",
+            "email": "david.behal@brackets.sk",
+            "homepage": "https://www.brackets.sk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4.0|^8.0",
+        "illuminate/support": "^8.0",
+        "spatie/laravel-medialibrary": "^9.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "orchestra/testbench": "~6.0"
+    },
+    "autoload": {
+        "classmap": [],
+        "psr-4": {
+            "Brackets\\Media\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Brackets\\Media\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brackets\\Media\\MediaServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "5.0-dev"
+        }
+    }
+}

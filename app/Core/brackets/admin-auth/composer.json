@@ -1,0 +1,62 @@
+{
+    "name": "brackets/admin-auth",
+    "description": "Authentication interface for brackets/admin-ui",
+    "keywords": [
+        "auth",
+        "authentication",
+        "login",
+        "user",
+        "admin",
+        "cms",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Pavol Perdík",
+            "email": "pavol.perdik@brackets.sk",
+            "homepage": "https://www.brackets.sk",
+            "role": "Developer"
+        },
+        {
+            "name": "David Běhal",
+            "email": "david.behal@brackets.sk",
+            "homepage": "https://www.brackets.sk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4.0|^8.0",
+        "brackets/admin-ui": "^4.0",
+        "brackets/media": "^6.0",
+        "illuminate/support": "^8.0",
+        "spatie/laravel-permission": "^3.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~6.0",
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "classmap": [],
+        "psr-4": {
+            "Brackets\\AdminAuth\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Brackets\\AdminAuth\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brackets\\AdminAuth\\AdminAuthServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-master": "7.0-dev"
+        }
+    }
+}

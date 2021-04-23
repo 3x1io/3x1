@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Modules/Core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Modules/ECommerce" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Modules/Location" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Modules/Notification" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Modules/SAAS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Modules/SEO" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Modules/Themes" vcs="Git" />
+  </component>
+</project>
