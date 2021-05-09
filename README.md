@@ -42,6 +42,25 @@
   </ol>
 </details>
 
+### Review This Packages First
+Thanks for this packages that's create our framework base
+- [Carftable](https://www.getcraftable.com/) [It's a Core Folder & CURD Generator & Admin Panel]
+- [Infyom](https://www.infyom.com/open-source) [APIs Scaffolding]
+- [Barcode](https://github.com/milon/barcode) [Generate Barcode]
+- [Tenancy](https://tenancyforlaravel.com/) [SaaS]
+- [Gravatar](https://github.com/creativeorange/gravatar) [Profile Avatar]
+- [Sweet Alert](https://github.com/realrashid/sweet-alert) [Alerts]
+- [Laravel](https://laravel.com/) [Main Framework]
+- [Laravel Sanctum](https://laravel.com/docs/8.x/sanctum) [APIs Token Auth]
+- [Laravel Socialite](https://laravel.com/docs/8.x/socialite) [Social Media Links]
+- [Laravel Permission](https://spatie.be/docs/laravel-permission/v4/introduction) [User ACL]
+- [Laravel Widgets](https://packagist.org/packages/arrilot/laravel-widgets) [Widgets]
+- [Laravel Module](https://nwidart.com/laravel-modules/v6/introduction) [MVC Modular Arch]
+- [Laravel Excel](https://laravel-excel.com/) [Import & Export Excel]
+- [Laravel Sitemap](https://github.com/spatie/laravel-sitemap) [Sitemap Generator]
+- [Laravel Translatable](https://github.com/spatie/laravel-translatable) [Translation]
+- [Laravel Media Library](https://github.com/spatie/laravel-medialibrary) [Media & Upload]
+- [Laravel Backup](https://github.com/spatie/laravel-backup) [Backup]
 ### Installation
 1. create a new 3x1 project
 ```bash
