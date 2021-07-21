@@ -26,10 +26,7 @@ class FileUploadController extends BaseController
         if ($request->hasFile('file')) {
             $path = $request->file('file')->store('', ['disk' => 'uploads']);
 
-            $cmd = config('3x1.cwebp_path') . ' -q 70 ' . storage_path('uploads/' . $path) . ' -o ' . storage_path('uploads/' . $path . '.webp');
-            exec($cmd, $output, $exitCode);
-
-            return response()->json(['path' => $path . '.webp'], 200);
+            return response()->json(['path' => $path], 200);
         }
 
         return response()->json(trans('brackets/media::media.file.not_provided'), 422);

@@ -1,4 +1,4 @@
-<header class="app-header navbar">
+<header class="app-header navbar" style="border-top: 3px solid #ff007a;">
     <button class="navbar-toggler sidebar-toggler d-lg-none" type="button" data-toggle="sidebar-show">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -6,9 +6,8 @@
         @include('admin.layout.logo')
 	@endif
     <ul class="nav navbar-nav ml-auto">
-        @if(module_active('Notification'))
-        <li class="nav-item ">
-            <a role="button" class=" nav-link dropdown" data-toggle="dropdown" style="cursor: pointer">
+        <li class="nav-item">
+            <a  role="button" style="cursor: pointer" class="nav-link dropdown" data-toggle="dropdown" >
                 <i class="icon-bell"></i>
                 <span class="badge badge-pill badge-danger" id="not-count">{{sizeof(get_notifications())}}</span>
             </a>
@@ -16,7 +15,6 @@
                 @include('admin.layout.notifications')
             @endif
         </li>
-        @endif
         <li class="nav-item dropdown">
             <a role="button" class="dropdown-toggle nav-link">
                 <span>

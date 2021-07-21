@@ -3,11 +3,18 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use Modules\Notification\Mail\SendMailable;
+use App\Jobs\SendEmailJob;
+use App\Mail\SendMailable;
+use App\Services\Github;
 use App\Services\Paytabs;
+use Codedge\Updater\UpdaterManager;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
+use Nwidart\Modules\Facades\Module;
+use Symfony\Component\Process\Process;
 
 class HelperController extends Controller
 {
@@ -53,7 +60,34 @@ class HelperController extends Controller
         }
     }
 
+    public function sitemap(){
+        return view('admin.setting.sitemap');
+    }
 
+    public function saveSitemap(Request $request){
+
+        setting_update('site.name', $request->get('site_name'));
+        setting_update('site.description', $request->get('site_description'));
+        setting_update('site.keywords', $request->get('site_keywords'));
+        setting_update('site.author', $request->get('site_author'));
+        $file = $request->file('site_logo');
+        if($file){
+            $imageName = time().'.'.$request->site_logo->extension();
+            $request->site_logo->move(public_path('images/settings'), $imageName);
+            setting_update('site.logo', '/images/settings/'. $imageName);
+        }
+
+        toast(__('SEO Updates!'),'success');
+        return back();
+    }
+
+    public function modules(){
+        return view('admin.setting.modules');
+    }
+
+    public function saveModules(Request $request){
+
+    }
 
     public function payment(){
         $check = Paytabs::checkSecret();
@@ -74,7 +108,7 @@ class HelperController extends Controller
         $check = true;
 
         try {
-            Mail::to(auth('admin')->user()->email)->send(new SendMailable());
+            Mail::to(auth('admin')->user()->email)->send(new SendMailable('Test Email' ));
         }
         catch (\Exception $exception){
             $check = false;
@@ -138,6 +172,65 @@ class HelperController extends Controller
         setting_update('messagebird.recipients', $request->get('messagebird_recipients'));
 
         toast(__('Messagebird Services Linked!'),'success');
+        return back();
+    }
+
+    public function localization(){
+        return view('admin.setting.localization');
+    }
+
+    public function saveLocalization(Request $request){
+        $request->validate([
+            'local_country' => 'required',
+            'local_phone' => 'required',
+            'local_lang' => 'required',
+            'local_lat' => 'required',
+            'local_lng' => 'required',
+            'geo_key' => 'required',
+            '$' => 'required',
+        ]);
+
+        setting_update('local.country', $request->get('local_country'));
+        setting_update('local.phone', $request->get('local_phone'));
+        setting_update('local.lang', $request->get('local_lang'));
+        setting_update('local.lat', $request->get('local_lat'));
+        setting_update('local.lng', $request->get('local_lng'));
+        setting_update('geo.key', $request->get('geo_key'));
+        setting_update('$', $request->get('$'));
+
+        toast(__('Localization Settings Updated!'),'success');
+        return back();
+    }
+
+    public function themes(Request $request){
+        $themes =  File::directories(base_path() . '/resources/views/themes');
+        $data = [];
+        if($themes){
+            foreach ($themes as $key=>$item){
+                array_push($data , [
+                    "id" => $key+1,
+                    "path" => $item,
+                    "info" => json_decode(File::get($item . '/info.json'))
+                ]);
+            }
+        }
+
+
+        return view('admin.setting.themes', ['data' => $data]);
+    }
+
+    public function themesSave(Request $request){
+        return $request;
+    }
+    public function themeActive(Request $request){
+        $request->validate([
+            'theme' => 'required'
+        ]);
+
+        setting_update('themes.path', $request->theme);
+        setting_update('themes.name', $request->name);
+
+        toast(__('Theme Updated'), 'success');
         return back();
     }
 

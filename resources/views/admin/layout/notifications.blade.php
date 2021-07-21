@@ -1,4 +1,4 @@
-<div class="dropdown-menu dropdown-menu-right">
+<div class="dropdown-menu dropdown-menu-right" style="width: 300px;">
     <div class="dropdown-header text-center bg-gray"><strong>{{ __('You have  ') }} {{sizeof(get_notifications())}} {{__('notifications')}}</strong></div>
 {{--    <a href="{{ url('admin/logout') }}" class="dropdown-item"><i class="fa fa-shopping-cart text-success"></i> {{ __('New Notifications Product') }}</a>--}}
     <div id="push-not"></div>

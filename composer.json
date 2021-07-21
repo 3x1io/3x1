@@ -11,6 +11,7 @@
         "php": "^7.3|^8.0",
         "ext-json": "*",
         "arrilot/laravel-widgets": "^3.13",
+        "beyondcode/laravel-websockets": "^1.12",
         "bigbluebutton/bigbluebutton-api-php": "^2.0",
         "creativeorange/gravatar": "^1.0",
         "doctrine/dbal": "~2.3",

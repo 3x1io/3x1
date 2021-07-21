@@ -28,6 +28,3 @@
 @section('bottom-scripts')
     @include('sweetalert::alert')
 @endsection
-@section('js')
-    <script src="{{ mix('/js/admin.js') }}"></script>
-@endsection
