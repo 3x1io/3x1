@@ -56,7 +56,10 @@ class RolesController extends Controller
             return ['data' => $data];
         }
 
-        return view('admin.role.index', ['data' => $data]);
+        return view('admin.role.index', [
+            'data' => $data,
+            'permissions' => Permission::all()
+        ]);
     }
 
     /**

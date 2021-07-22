@@ -198,6 +198,8 @@ return [
         Brackets\Media\MediaServiceProvider::class,
         Brackets\Translatable\TranslatableServiceProvider::class,
         Weidner\Goutte\GoutteServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
+
 
     ],
 
@@ -254,7 +256,9 @@ return [
         'Html'      => Collective\Html\HtmlFacade::class,
         'Flash'     => Laracasts\Flash\Flash::class,
         'Mailchimp' => NZTim\Mailchimp\MailchimpFacade::class,
-        'Goutte' => Weidner\Goutte\GoutteFacade::class
+        'Goutte' => Weidner\Goutte\GoutteFacade::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
+
     ],
 
 ];

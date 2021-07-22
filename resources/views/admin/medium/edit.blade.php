@@ -24,6 +24,7 @@
 
                     <div class="card-body">
                         @include('admin.medium.components.form-elements')
+
                     </div>
 
 

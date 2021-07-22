@@ -9,6 +9,7 @@
 
             <role-form
                 :action="'{{ $role->resource_url }}'"
+                :permissions="{{$permissions->toJson()}}"
                 :data="{{ $role->toJson() }}"
                 v-cloak
                 inline-template>
@@ -22,6 +23,7 @@
 
                     <div class="card-body">
                         @include('admin.role.components.form-elements')
+
                     </div>
 
 

@@ -20,256 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c257a0bb-d5f4-4b89-b88b-65e872c9e734" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Events/PushNotification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exports/AreasExport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exports/CitiesExport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exports/CountriesExport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exports/LanguagesExport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exports/MediaExport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exports/PermissionsExport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exports/RolesExport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exports/SettingsExport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exports/UserNotificationsExport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminUsersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AreasController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CitiesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CountriesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/LanguagesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/LocationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MediaController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PermissionsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ProfileController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/RolesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UserNotificationsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Themes/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/AdminUser/DestroyAdminUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/AdminUser/ImpersonalLoginAdminUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/AdminUser/IndexAdminUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/AdminUser/StoreAdminUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/AdminUser/UpdateAdminUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Area/BulkDestroyArea.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Area/DestroyArea.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Area/IndexArea.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Area/StoreArea.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Area/UpdateArea.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/City/BulkDestroyCity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/City/DestroyCity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/City/IndexCity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/City/StoreCity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/City/UpdateCity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Country/BulkDestroyCountry.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Country/DestroyCountry.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Country/IndexCountry.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Country/StoreCountry.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Country/UpdateCountry.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Language/BulkDestroyLanguage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Language/DestroyLanguage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Language/IndexLanguage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Language/StoreLanguage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Language/UpdateLanguage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Medium/BulkDestroyMedium.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Medium/DestroyMedium.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Medium/IndexMedium.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Medium/StoreMedium.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Medium/UpdateMedium.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Permission/BulkDestroyPermission.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Permission/DestroyPermission.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Permission/IndexPermission.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Permission/StorePermission.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Permission/UpdatePermission.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Role/BulkDestroyRole.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Role/DestroyRole.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Role/IndexRole.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Role/StoreRole.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Role/UpdateRole.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Setting/BulkDestroySetting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Setting/DestroySetting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Setting/IndexSetting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Setting/StoreSetting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/Setting/UpdateSetting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/UserNotification/BulkDestroyUserNotification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/UserNotification/DestroyUserNotification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/UserNotification/IndexUserNotification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/UserNotification/StoreUserNotification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/UserNotification/UpdateUserNotification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Jobs/SendEmailJob.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Mail/SendMailable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Area.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/City.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Country.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Language.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Medium.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Permission.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Setting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/UserHasNotification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/UserNotification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Notifications/Email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Notifications/Facebook.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Notifications/FacebookPost.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Notifications/SMS.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Notifications/Tweet.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/3x1.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2017_08_24_000000_create_activations_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2017_08_24_000000_create_admin_activations_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2017_08_24_000000_create_admin_password_resets_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2017_08_24_000000_create_admin_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2018_07_18_000000_create_wysiwyg_media_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_09_15_000010_create_tenants_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_09_15_000020_create_domains_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_05_15_000010_create_tenant_user_impersonation_tokens_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_03_171807_create_countries_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_03_171841_create_cities_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_21_000000_add_last_login_at_timestamp_to_admin_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_03_07_083630_create_media_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_03_07_083630_create_permission_tables.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_03_07_083635_fill_default_admin_user_and_permissions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_03_07_083706_create_translations_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_03_07_095645_create_settings_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_03_07_095819_fill_permissions_for_setting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_03_07_095901_fill_permissions_for_role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_03_07_095927_fill_permissions_for_permission.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_03_07_100116_fill_permissions_for_medium.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_03_10_094014_create_jobs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_03_131655_fill_settings_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_13_221439_create_user_notifications_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_13_221447_create_user_has_notifications_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_13_222135_fill_permissions_for_user-notification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_13_234601_update_admin_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_14_130712_create_areas_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_14_134917_fill_permissions_for_country.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_14_135020_fill_permissions_for_city.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_14_135041_fill_permissions_for_area.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_14_141210_create_languages_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_14_141631_fill_permissions_for_language.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_14_182305_fill_all_vars.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/admin-user/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/admin-user/Listing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/admin-user/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/area/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/area/Listing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/area/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/city/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/city/Listing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/city/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/country/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/country/Listing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/country/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/language/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/language/Listing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/language/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/medium/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/medium/Listing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/medium/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/permission/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/permission/Listing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/permission/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/profile-edit-password/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/profile-edit-password/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/profile-edit-profile/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/profile-edit-profile/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/role/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/role/Listing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/role/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/setting/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/setting/Listing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/setting/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/user-notification/Form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/user-notification/Listing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/admin/user-notification/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/ar/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin-user/components/form-elements.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin-user/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin-user/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/admin-user/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/area/components/form-elements.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/area/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/area/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/area/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/city/components/form-elements.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/city/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/city/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/city/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/country/components/form-elements.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/country/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/country/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/country/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/language/components/form-elements.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/language/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/language/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/language/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/parts/websocket.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/medium/components/form-elements.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/medium/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/medium/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/medium/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/permission/components/form-elements.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/permission/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/permission/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/permission/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/profile/edit-password.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/profile/edit-profile.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/role/components/form-elements.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/role/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/role/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/role/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/setting/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/setting/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/setting/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/setting/localization.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/setting/sitemap.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/setting/themes.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user-notification/components/form-elements.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user-notification/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/user-notification/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/includes/meta.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/themes/3x1/info.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/themes/3x1/layouts/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/themes/3x1/pages/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/themes/3x1Store/info.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/themes/3x1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/themes/3x1Store.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/templates/roles.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/flkv2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flkv2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Core/brackets/admin-translations/resources/views/admin/translation/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/brackets/admin-translations/resources/views/admin/translation/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Core/brackets/admin-ui/resources/views/admin/layout/default.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/brackets/admin-ui/resources/views/admin/layout/default.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Core/brackets/admin-ui/resources/views/admin/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/parts/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Core/brackets/admin-ui/resources/views/admin/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/parts/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Core/brackets/admin-ui/resources/views/admin/partials/main-bottom-scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/brackets/admin-ui/resources/views/admin/partials/main-bottom-scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Core/brackets/media/src/Http/Controllers/FileUploadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/brackets/media/src/Http/Controllers/FileUploadController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/HelperController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/HelperController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminUsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminUsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/RolesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/RolesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/broadcasting.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/broadcasting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules_statuses.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules_statuses.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/admin/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/admin/admin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/admin/admin.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/homepage/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/homepage/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/notifications.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/notifications.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layout/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/setting/backups.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/setting/backups.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/setting/collector.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/setting/collector.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/setting/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/setting/email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/setting/modules.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/setting/modules.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/setting/payment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/setting/payment.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/admin/permission/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/permission/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/admin/role/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/admin/role/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-user/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-user/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/admin-user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/admin-user/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/medium/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/medium/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/role/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/role/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/role/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/role/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/role/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/role/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/setting/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/setting/services.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/setting/services/messagebird.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/setting/services/messagebird.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/setting/services/pusher.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/setting/services/pusher.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/setting/settings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/setting/settings.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/setting/services/pusher.blade.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -473,6 +244,9 @@
       <path value="$PROJECT_DIR$/vendor/react/cache" />
       <path value="$PROJECT_DIR$/vendor/cboden/ratchet" />
       <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
     </include_path>
   </component>
   <component name="ProjectId" id="1sIR4wMbFSOCy0PRfbrafSMt0Ou" />
@@ -556,7 +330,8 @@
       <workItem from="1619034450127" duration="8000" />
       <workItem from="1619126623454" duration="14657000" />
       <workItem from="1620557932548" duration="1032000" />
-      <workItem from="1626879903012" duration="12856000" />
+      <workItem from="1626879903012" duration="20446000" />
+      <workItem from="1626919565196" duration="1588000" />
     </task>
     <servers />
   </component>
@@ -573,15 +348,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="755" y="535" width="399" height="155" key="NewPhpFileDialog" timestamp="1626893415422">
+    <state x="755" y="535" width="399" height="155" key="NewPhpFileDialog" timestamp="1626899463894">
       <screen x="0" y="28" width="1920" height="1172" />
     </state>
-    <state x="755" y="535" width="399" height="155" key="NewPhpFileDialog/0.28.1920.1172@0.28.1920.1172" timestamp="1626893415422" />
-    <state x="624" y="284" key="run.anything.popup" timestamp="1626888033513">
+    <state x="755" y="535" width="399" height="155" key="NewPhpFileDialog/0.28.1920.1172@0.28.1920.1172" timestamp="1626899463894" />
+    <state x="624" y="284" key="run.anything.popup" timestamp="1626894431290">
       <screen x="0" y="28" width="1920" height="1172" />
     </state>
-    <state x="624" y="284" key="run.anything.popup/0.28.1920.1172@0.28.1920.1172" timestamp="1626888033513" />
+    <state x="624" y="284" key="run.anything.popup/0.28.1920.1172@0.28.1920.1172" timestamp="1626894431290" />
   </component>
 </project>

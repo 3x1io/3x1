@@ -6,8 +6,7 @@ Vue.component('permission-form', {
         return {
             form: {
                 guard_name:  '' ,
-                name:  '' ,
-                
+                name:  ''
             }
         }
     }

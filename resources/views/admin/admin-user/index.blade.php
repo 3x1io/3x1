@@ -16,7 +16,45 @@
                     <div class="card-header">
                         <i class="fa fa-align-justify"></i> {{ trans('admin.admin-user.actions.index') }}
                         @can('admin.admin-user.create')
-                            <a class="btn btn-primary btn-spinner btn-sm pull-right m-b-0" href="{{ url('admin/admin-users/create') }}" role="button"><i class="fa fa-plus"></i>&nbsp; {{ trans('admin.admin-user.actions.create') }}</a>
+                            <a class="btn btn-primary btn-sm pull-right m-b-0" href="{{ url('admin/admin-users/create') }}" @click.prevent="$modal.show('create')" role="button"><i class="fa fa-plus"></i>&nbsp; {{ trans('admin.admin-user.actions.create') }}</a>
+                            <!-- Modals -->
+                            <!-- Stat Create Modal -->
+                            <modal name="create" height="auto" clickToClose="false" draggable adaptive resizable scrollable>
+                                <div class="card  mb-0">
+
+                                    <admin-user-form
+                                        :action="'{{ url('admin/admin-users') }}'"
+                                        :activation="!!'{{ $activation }}'"
+
+                                        inline-template>
+
+                                        <form class="form-horizontal form-create" method="post" @submit.prevent="onSubmit" :action="action">
+
+                                            <div class="card-header">
+                                                <i class="fa fa-plus"></i> {{ trans('admin.admin-user.actions.create') }}
+                                            </div>
+
+                                            <div class="card-body">
+
+                                                @include('admin.admin-user.components.form-elements')
+
+                                            </div>
+
+                                            <div class="card-footer">
+                                                <button type="submit" class="btn btn-primary" :disabled="submiting">
+                                                    <i class="fa" :class="submiting ? 'fa-spinner' : 'fa-download'"></i>
+                                                    {{ trans('brackets/admin-ui::admin.btn.save') }}
+                                                </button>
+                                            </div>
+
+                                        </form>
+
+                                    </admin-user-form>
+
+                                </div>
+
+                            </modal>
+                            <!-- End Create Modal -->
                         @endcan
                     </div>
                     <div class="card-body" v-cloak>
@@ -120,6 +158,8 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
     </admin-user-listing>
 

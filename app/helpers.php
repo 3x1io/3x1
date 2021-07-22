@@ -153,3 +153,18 @@ if(!function_exists('get_notifications')){
         return $get;
     }
 }
+
+if(!function_exists('get_permissions')){
+    function get_permissions($key, $label, $selected=[]){
+        $get = \App\Models\Permission::where('name', 'LIKE', '%' .$key. '%')->get();
+        foreach ($get as $item){
+            $item->label = ucfirst(str_replace('.', '', str_replace('admin.'.$key, '', $item->name)));
+        }
+
+        return view('templates.roles', [
+            "label" => $label,
+            "items" => $get,
+            "selected" => $selected
+        ])->render();
+    }
+}

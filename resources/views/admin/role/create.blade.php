@@ -10,6 +10,7 @@
 
         <role-form
             :action="'{{ url('admin/roles') }}'"
+            :permissions="{{$permissions->toJson()}}"
             v-cloak
             inline-template>
 
@@ -21,6 +22,16 @@
 
                 <div class="card-body">
                     @include('admin.role.components.form-elements')
+
+                    <div class="row mt-5">
+                        {!! get_permissions('role', 'Roles') !!}
+                        {!! get_permissions('permission', 'Permissions') !!}
+                        {!! get_permissions('language', 'Languages') !!}
+                        {!! get_permissions('country', 'Countries') !!}
+                        {!! get_permissions('medium', 'Media') !!}
+                        {!! get_permissions('translation', 'Translations') !!}
+                        {!! get_permissions('admin-user', 'Admin Users') !!}
+                    </div>
                 </div>
 
                 <div class="card-footer">
