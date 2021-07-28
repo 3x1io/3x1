@@ -20,7 +20,7 @@ Route::get('/', function(){
     return view('welcome');
 });
 
-if(\Illuminate\Support\Facades\Schema::hasTable('settings')){
+try {
     if(setting('themes.name')){
         $path = base_path('routes/themes') . '/' . setting('themes.name') .'.php';
         if(\Illuminate\Support\Facades\File::exists($path)){
@@ -32,7 +32,7 @@ if(\Illuminate\Support\Facades\Schema::hasTable('settings')){
             return view('welcome');
         });
     }
-}
+}catch(Exception $exception){}
 
 
 /* Auto-generated admin routes */
