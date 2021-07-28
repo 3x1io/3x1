@@ -98,57 +98,6 @@ npm i
 ```bash
 npm run dev
 ```
-8. Go to app/Providers/AppServiceProvider in boot function add this code
-
-```PHP
-Config::set('mail.mailers.smtp', [
-    'transport' => 'smtp',
-    'host' => setting('email.host'),
-    'port' => setting('email.port'),
-    'encryption' => setting('email.encryption'),
-    'username' => setting('email.username'),
-    'password' => setting('email.password'),
-    'timeout' => null,
-    'auth_mode' => null,
-]);
-
-Config::set('mail.from', [
-    'address' => setting('email.from'),
-    'name' => setting('email.from.name'),
-]);
-
-Config::set('broadcasting.connections.pusher', [
-    'driver' => 'pusher',
-    'key' => setting('pusher.key'),
-    'secret' => setting('pusher.secret'),
-    'app_id' => setting('pusher.app_id'),
-    'options' => [
-        'cluster' => setting('pusher.cluster'),
-        'useTLS' => true,
-    ],
-]);
-
-Config::set('services.messagebird', [
-    'access_key' => setting('messagebird.access_key'),
-    'originator' => setting('messagebird.originator'),
-    'recipients' => setting('messagebird.recipients'),
-]);
-
-JavaScript::put([
-    'pusherKey' => setting('pusher.key'),
-]);
-
-if(auth('admin')->user()){
-    JavaScript::put([
-        'authId' => auth('admin')->user()->id
-    ]);
-}
-else {
-    JavaScript::put([
-        'authId' => null
-    ]);
-}
-```
 
 ### Generator
 you can easy generate CURD operations with controllers and views and routes and every thing with just one command
@@ -191,9 +140,9 @@ our framework support front theme by easy way you can add a new theme by this wa
 ```json
 {
     "name": "3x1 Theme",
-    "ar": "3x1 ثيم",
+    "ar": "ثري اكس ون ثيم",
     "description": "3x1 Theme Is Default Theme Of 3x1 Framework",
-    "description_ar": "الثيم الافتراضي",
+    "description_ar": "الثيم الافتراضي لنطاق عمل 3x1",
     "keywords": [],
     "aliases": "3x1",
     "files": [],
@@ -229,12 +178,12 @@ you can import and export translation as excel sheet and a new languages by chan
 
 you can access a lot of location features by helper function like
 ```php
-dollar()
+dollar($money)
 ```
 it will echo the selected currency IOS with tag `<small>EGP</small>`
 
 ### Notifications
-you build notification system with **[Pusher](https://pusher.com/)**
+you build notification system with **[Laravel Websocket](https://github.com/beyondcode/laravel-websockets)**
 
 to use Notification System 
 1. create a pusher account

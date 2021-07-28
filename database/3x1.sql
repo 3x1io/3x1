@@ -1477,7 +1477,7 @@ INSERT INTO `languages` (`id`, `iso`, `name`, `arabic`, `created_at`, `updated_a
 
 INSERT INTO `settings` (`id`, `key`, `group`, `value`, `created_at`, `updated_at`) VALUES
 (22, 'geo.key', 'geo', 'geo', '2021-04-14 10:55:35', '2021-04-14 10:58:57'),
-(23, '$', 'local', '46', '2021-04-14 11:57:13', '2021-04-14 12:26:31'),
+(23, '$', 'local', 'EGP', '2021-04-14 11:57:13', '2021-04-14 12:26:31'),
 (24, 'local.lang', 'local', '141', '2021-04-14 11:57:28', '2021-04-14 12:26:31'),
 (25, 'local.country', 'local', '65', '2021-04-14 11:57:58', '2021-04-14 12:24:55'),
 (26, 'local.phone', 'local', '+2', '2021-04-14 11:58:22', '2021-04-14 11:58:22'),
@@ -3299,3 +3299,5 @@ INSERT INTO `blocks` (`id`, `key`, `html`, `created_at`, `updated_at`) VALUES
 (21, 'list.email', '<a :href=\"\'mailto:\'+item.{{$data[\'name\']}}\" class=\"badge badge-primary p-2\"><i class=\"fa fa-envelope\"></i> {{\'{{\'}} item.{{$data[\'name\']}} }}</a>', '2021-07-28 12:25:28', '2021-07-28 12:25:28'),
 (22, 'list.phone', '<a :href=\"\'tel:\'+item.{{$data[\'name\']}}\" class=\"badge badge-primary p-2\"><i class=\"fa fa-phone\"></i> {{\'{{\'}} item.{{$data[\'name\']}} }}</a>', '2021-07-28 12:26:49', '2021-07-28 12:26:49'),
 (23, 'list.link', '<a href=\"{{$data[\'url\']}}\" @if(sizeof($data[\'options\']) && isset($data[\'options\'][\'target\'])) target=\"{{$data[\'options\'][\'target\']}}\" @endif> {{\'{{\'}} item.{{$data[\'name\']}} }} </a>', '2021-07-28 12:27:25', '2021-07-28 12:27:33');
+(24, 'list.date', '<span class=\"badge badge-primary p-2\">\n    <i class=\"fa fa-clock-o\"></i> {{\'{{\'}} item.{{$data[\'name\']}} | datetime }}\n</span>', '2021-07-28 13:41:16', '2021-07-28 13:42:21'),
+(25, 'list.money', '<h5 class=\"text-{{$data[\'options\'][\'bg\']}}\"><b>{{\'{{\'}} item.{{$data[\'name\']}}.toLocaleString() }}</b><small>{{setting(\'$\')}}</small></h3>', '2021-07-28 13:50:34', '2021-07-28 13:54:56');

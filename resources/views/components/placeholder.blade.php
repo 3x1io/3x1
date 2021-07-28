@@ -1,1 +1,3 @@
-<h5 class="text-{{$data['options']['bg']}}"><b>{{'{{'}} item.{{$data['name']}}.toLocaleString() }}</b><small>{{setting('$')}}</small></h3>
+<span class="badge badge-primary p-2">
+    <i class="fa fa-clock-o"></i> {{'{{'}} item.{{$data['name']}} | datetime }}
+</span>
