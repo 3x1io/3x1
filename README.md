@@ -19,33 +19,6 @@
   </p>
 </p>
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#usage">Usage</a>
-      <ul>
-        <li><a href="#generator">Generator</a></li>
-        <li><a href="#widgets">Widgets</a></li>
-        <li><a href="#themes">Theme Manager</a></li>
-        <li><a href="#locations">Locations & GPS</a></li>
-        <li><a href="#notifications">Notifications</a></li>
-        <li><a href="#setting">Settings</a></li>
-      </ul>
-    </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
-
 ### Review This Packages First
 Thanks for this packages that's create our framework base
 - [Carftable](https://www.getcraftable.com/) [It's a Core Folder & CURD Generator & Admin Panel]
@@ -248,6 +221,10 @@ it's take some params
 - $key `Key Of Setting`
 - $value `The Value You Get In the request to update it`
 
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -259,6 +236,21 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## Security
+
+If you discover any security related issues, please email info@3x1.io instead of using the issue tracker.
+
+## Credits
+
+- [Fady Mondy](https://www.linkedin.com/in/engfadymondy)
+
+## Support us
+
+3x1 is a creative solutions agency based in Egypt, Cairo.  [on our website](https://3x1.io).
+
+Does your business depend on our contributions? Reach out and support us on [Patreon](https://www.patreon.com/3x1). 
+All pledges will be dedicated to allocating workforce on maintenance and new awesome stuff.
+
 <!-- LICENSE -->
 ## License
 
@@ -267,6 +259,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@3x1io](https://twitter.com/3x1io) - info@3x1.io
+Fady Mondy - [@3x1io](https://twitter.com/3x1io) - info@3x1.io
 
-Project Link: [https://github.com/3x1io/3x1](https://github.com/3x1io/3x1)
+Project Link: [GitHub](https://github.com/3x1io/3x1)
