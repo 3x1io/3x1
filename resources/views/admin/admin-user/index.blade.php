@@ -100,23 +100,19 @@
                                     <td >@{{ item.id }}</td>
                                     <td >@{{ item.first_name }}</td>
                                     <td >@{{ item.last_name }}</td>
-                                    <td >@{{ item.email }}</td>
+                                    <td>{!! list_fn('email', 'email') !!}</td>
                                     <td v-if="activation">
-                                        <label class="switch switch-3d switch-success">
-                                            <input type="checkbox" class="switch-input" v-model="collection[index].activated" @change="toggleSwitch(item.resource_url, 'activated', collection[index])">
-                                            <span class="switch-slider"></span>
-                                        </label>
+                                        {!! list_fn('action', 'activated') !!}
                                     </td>
                                     <td >
-                                        <label class="switch switch-3d switch-danger">
-                                            <input type="checkbox" class="switch-input" v-model="collection[index].forbidden" @change="toggleSwitch(item.resource_url, 'forbidden', collection[index])">
-                                            <span class="switch-slider"></span>
-                                        </label>
+                                        {!! list_fn('action', 'forbidden', '', [
+                                            "bg"=> "danger"
+                                        ]) !!}
                                     </td>
                                     <td >@{{ item.language }}</td>
-                                    <td >@{{ item.last_login_at | datetime }}</td>
-
-
+                                    <td >{!! list_fn('date', 'last_login_at', '', [
+                                            "type" => "datetime"
+                                    ]) !!}</td>
 
                                     <td>
                                         <div class="row no-gutters">

@@ -5,6 +5,7 @@
             <li class="nav-item"><a class="nav-link" href="{{ url('admin') }}"><i class="nav-icon fa fa-home"></i> {{ __('Dashboard') }}</a></li>
             <li class="nav-title">{{ trans('brackets/admin-ui::admin.sidebar.content') }}</li>
 
+
            {{-- Do not delete me :) I'm used for auto-generation menu items --}}
             <li class="nav-title">{{ trans('brackets/admin-ui::admin.sidebar.settings') }}</li>
             <li class="nav-item nav-dropdown">
@@ -16,7 +17,6 @@
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/admin-users') }}"><i class="nav-icon fa fa-users "></i> {{ __('Manage access') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/roles') }}"><i class="nav-icon fa fa-user-secret"></i> {{ trans('admin.role.title') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/permissions') }}"><i class="nav-icon fa fa-lock"></i> {{ trans('admin.permission.title') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/media') }}"><i class="nav-icon fa fa-image"></i> {{ trans('admin.medium.title') }}</a></li>
                 </ul>
             </li>
             <li class="nav-item  nav-dropdown  ">
@@ -49,6 +49,7 @@
                 </a>
                 <ul class="nav-dropdown-items">
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/themes') }}"><i class="nav-icon fa fa-paint-brush"></i> {{ __('Themes') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/blocks') }}"><i class="nav-icon fa fa-square"></i> {{ trans('admin.block.title') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/payment') }}"><i class="nav-icon fa fa-credit-card"></i> {{ __('Payments') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/email') }}"><i class="nav-icon fa fa-envelope"></i> {{ __('Email') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/services') }}"><i class="nav-icon fa fa-amazon"></i> {{ __('Services') }}</a></li>

@@ -415,3 +415,14 @@ $factory->define(App\Models\Wishlist::class, static function (Faker\Generator $f
         
     ];
 });
+/** @var  \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Models\Block::class, static function (Faker\Generator $faker) {
+    return [
+        'key' => $faker->sentence,
+        'html' => $faker->text(),
+        'created_at' => $faker->dateTime,
+        'updated_at' => $faker->dateTime,
+        
+        
+    ];
+});

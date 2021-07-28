@@ -20,6 +20,10 @@ Route::get('/', function(){
     return view('welcome');
 });
 
+Route::get('admin/test', function(){
+    return view('admin.test');
+});
+
 if(\Illuminate\Support\Facades\Schema::hasTable('settings')){
     if(setting('themes.name')){
         $path = base_path('routes/themes') . '/' . setting('themes.name') .'.php';
@@ -250,3 +254,20 @@ Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->gro
 
 
 
+
+
+/* Auto-generated admin routes */
+Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin'])->group(static function () {
+    Route::prefix('admin')->namespace('App\Http\Controllers\Admin')->name('admin/')->group(static function() {
+        Route::prefix('blocks')->name('blocks/')->group(static function() {
+            Route::get('/',                                             'BlocksController@index')->name('index');
+            Route::get('/create',                                       'BlocksController@create')->name('create');
+            Route::post('/',                                            'BlocksController@store')->name('store');
+            Route::get('/{block}/edit',                                 'BlocksController@edit')->name('edit');
+            Route::post('/bulk-destroy',                                'BlocksController@bulkDestroy')->name('bulk-destroy');
+            Route::post('/{block}',                                     'BlocksController@update')->name('update');
+            Route::delete('/{block}',                                   'BlocksController@destroy')->name('destroy');
+            Route::get('/export',                                       'BlocksController@export')->name('export');
+        });
+    });
+});

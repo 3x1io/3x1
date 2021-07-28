@@ -90,7 +90,14 @@ class HelperController extends Controller
     }
 
     public function payment(){
-        $check = Paytabs::checkSecret();
+        /* Active it if you went to check paytabs data */
+//        $check = Paytabs::checkSecret();
+        if(!empty(setting('paytabs.merchant_email')) && !empty(setting('paytabs.secret_key'))){
+            $check = true;
+        }
+        else {
+            $check = false;
+        }
         return view('admin.setting.payment', [
             'check' => $check
         ]);

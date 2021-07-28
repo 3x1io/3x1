@@ -10,3 +10,5 @@ import './area';
 import './country';
 import './user-notification';
 import './language';
+import './main';
+import './block';

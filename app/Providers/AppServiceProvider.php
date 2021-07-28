@@ -45,17 +45,6 @@ class AppServiceProvider extends ServiceProvider
                 'name' => setting('email.from.name'),
             ]);
 
-//            Config::set('broadcasting.connections.pusher', [
-//                'driver' => 'pusher',
-//                'key' => setting('pusher.key'),
-//                'secret' => setting('pusher.secret'),
-//                'app_id' => setting('pusher.app_id'),
-//                'options' => [
-//                    'cluster' => setting('pusher.cluster'),
-//                    'useTLS' => true,
-//                ],
-//            ]);
-
             Config::set('services.messagebird', [
                 'access_key' => setting('messagebird.access_key'),
                 'originator' => setting('messagebird.originator'),

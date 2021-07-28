@@ -558,5 +558,23 @@ return [
         ],
     ],
 
+    'block' => [
+        'title' => 'Blocks',
+
+        'actions' => [
+            'index' => 'Blocks',
+            'create' => 'New Block',
+            'edit' => 'Edit :name',
+            'export' => 'Export',
+        ],
+
+        'columns' => [
+            'id' => 'ID',
+            'key' => 'Key',
+            'html' => 'Html',
+            
+        ],
+    ],
+
     // Do not delete me :) I'm used for auto-generation
 ];

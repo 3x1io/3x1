@@ -1,6 +1,8 @@
 <?php
 
 //Setting Helpers
+use App\Models\Block;
+
 if(!function_exists('setting')){
     function setting($key){
         $setting = \App\Models\Setting::where('key', $key)->first();
@@ -166,5 +168,78 @@ if(!function_exists('get_permissions')){
             "items" => $get,
             "selected" => $selected
         ])->render();
+    }
+}
+
+//HTML
+if(!function_exists('input')){
+    function input($type, $name, $label,$validation=false,$options=[],$custom=false,$placeholder=false, $id=false, $class='form-control', $ref=false, $model=false){
+        return block('form.' . $type, [
+            'name' => $name,
+            'type' => $type,
+            'id' => $id,
+            'label' => $label,
+            'model' => $model,
+            'placeholder' => $placeholder,
+            'validation' => $validation,
+            'ref'=> $ref,
+            'custom' => $custom,
+            'class' => $class,
+            'options' => $options
+        ]);
+    }
+}
+if(!function_exists('vue_form')){
+    function vue_form($action,$redirect,$form, $method='post', $data='{}', $items='{}'){
+        return view('components.forms.start_form', [
+            'action' => $action,
+            'redirect' => $redirect,
+            'form' => $form,
+            'method' => $method,
+            'data' => $data,
+            'items' => $items
+        ])->render();
+    }
+}
+if(!function_exists('end_vue_form')){
+    function end_vue_form(){
+        return view('components.forms.end_form')->render();
+    }
+}
+if(!function_exists('vue_form_js')){
+    function vue_form_js(){
+        return view('components.forms.js')->render();
+    }
+}
+if(!function_exists('list_fn')){
+    function list_fn($type, $name, $url=null, $options=[]){
+        return block('list.' . $type, [
+            "type" => $type,
+            "name" => $name,
+            "options"=> $options,
+            "url" => $url
+        ]);
+    }
+}
+
+if(!function_exists('block')){
+    function block($key, $data=[]) {
+        $block = \App\Models\Block::where('key', $key)->first();
+        $check = \Illuminate\Support\Facades\File::exists(resource_path('views/components/placeholder.blade.php'));
+
+        if($block){
+            if($check){
+                \Illuminate\Support\Facades\File::put(resource_path('views/components/placeholder.blade.php'),$block->html);
+                return view('components.placeholder', [
+                    "data" => $data
+                ])->render();
+            }
+            else {
+                return "";
+            }
+        }
+        else {
+            return "";
+        }
     }
 }
