@@ -20,9 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c257a0bb-d5f4-4b89-b88b-65e872c9e734" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/AuthController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/PermissionsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/RoleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/SecretMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Mail/EmailCode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Mail/EmailReset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Mail/EmailWelcome.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/code.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +258,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -255,19 +266,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Sites\3x1\resources\views" />
+      <recent name="D:\Sites\3x1\app\Mail" />
+      <recent name="D:\Sites\3x1\app\Http\Middleware" />
+      <recent name="D:\Sites\3x1\app\Http\Controllers" />
+      <recent name="D:\Sites\3x1\resources\js\admin" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/admin/layout/parts" />
       <recent name="$PROJECT_DIR$/database/migrations" />
       <recent name="$PROJECT_DIR$/Modules/Core/Database/Migrations" />
       <recent name="$PROJECT_DIR$/Modules/Location/Database/Migrations" />
       <recent name="$PROJECT_DIR$/Modules/Location/Database" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Sites\3x1\resources\js\admin" />
-      <recent name="D:\Sites\3x1\resources\views\components\forms" />
-      <recent name="D:\Sites\3x1\resources\js" />
-      <recent name="$PROJECT_DIR$/resources/lang/ar" />
-      <recent name="$PROJECT_DIR$/database/migrations" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.web.php">
@@ -321,7 +332,7 @@
       <workItem from="1627463490790" duration="96000" />
       <workItem from="1627463607583" duration="1539000" />
       <workItem from="1627465976181" duration="24850000" />
-      <workItem from="1627497681880" duration="1696000" />
+      <workItem from="1627497681880" duration="2301000" />
     </task>
     <servers />
   </component>

@@ -2,6 +2,8 @@
 
 //Setting Helpers
 use App\Models\Block;
+use MessageBird\Client;
+use MessageBird\Objects\Message;
 
 if(!function_exists('setting')){
     function setting($key){
@@ -170,6 +172,54 @@ if(!function_exists('get_permissions')){
         ])->render();
     }
 }
+if(!function_exists('user_can')){
+    function user_can($permission){
+        if(auth()->user()){
+            $roles = auth()->user()->roles;
+            if($roles->count()){
+                foreach ($roles as $item){
+                    $getRole = \App\Models\Role::find($item->id);
+                    if($getRole){
+                        $permissions = $getRole->permissions;
+                        foreach ($permissions as $perm){
+                            if($perm->key === $permission){
+                                return true;
+                            }
+                        }
+                    }
+                    else {
+                        return false;
+                    }
+
+                }
+
+                return false;
+            }
+            else {
+                return  false;
+            }
+
+        }
+        else {
+            return  false;
+        }
+
+    }
+}
+
+if(!function_exists('send_sms')){
+    function send_sms($api, $from, $to, $message){
+        $MessageBird = new Client($api);
+        $sms = new Message();
+        $sms->originator = $from;
+        $sms->recipients = array($to);
+        $sms->body = $message;
+        $sms->type = 'sms';
+
+        $MessageBird->messages->create($sms);
+    }
+}
+
 
 //HTML
 if(!function_exists('input')){
