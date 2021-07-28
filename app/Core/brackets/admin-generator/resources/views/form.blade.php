@@ -18,34 +18,30 @@
 </div>
 @endif
 {{-- TODO extract to the exceptional array  --}}
-@foreach($columns as $col)@if(!in_array($col['name'], ['created_by_admin_user_id','updated_by_admin_user_id']))@if($col['name'] == 'password')
-{{'{!!'}} input('password', $col['name'], trans('admin.'.$modelLangFormat.'.columns.'.$col['name']), implode('|', collect($col['frontendRules'])->reject(function($rule) use ($col) { return $rule === 'confirmed:'.$col['name'];})->toArray())) !!}
-{{'{!!'}} input('password', 'password_confirmation', trans('admin.'.$modelLangFormat.'.columns.'.$col['name'].'_repeat'), implode('|', $col['frontendRules'])) !!}
-@elseif($col['type'] == 'date' && !in_array($col['name'], ['published_at']))<div class="form-group row align-items-center" :class="{'has-danger': errors.has('{{ $col['name'] }}'), 'has-success': fields.{{ $col['name'] }} && fields.{{ $col['name'] }}.valid }">
-    <label for="{{ $col['name'] }}" class="col-form-label text-md-right" :class="isFormLocalized ? 'col-md-4' : 'col-md-2'">{{'{{'}} trans('admin.{{ $modelLangFormat }}.columns.{{ $col['name'] }}') }}</label>
-    <div :class="isFormLocalized ? 'col-md-4' : 'col-sm-8'">
-        <div class="input-group input-group--custom">
-            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-            <datetime v-model="form.{{ $col['name'] }}" :config="datePickerConfig" v-validate="'{{ implode('|', $col['frontendRules']) }}'" class="flatpickr" :class="{'form-control-danger': errors.has('{{ $col['name'] }}'), 'form-control-success': fields.{{ $col['name'] }} && fields.{{ $col['name'] }}.valid}" id="{{ $col['name'] }}" name="{{ $col['name'] }}" placeholder="@{{ trans('brackets/admin-ui::admin.forms.select_a_date') }}"></datetime>
-        </div>
-        <div v-if="errors.has('{{ $col['name'] }}')" class="form-control-feedback form-text" v-cloak>{{'@{{'}} errors.first('{{ $col['name'] }}') }}</div>
-    </div>
-</div>
+@foreach($columns as $col)
+@if(!in_array($col['name'], ['created_by_admin_user_id','updated_by_admin_user_id']))@if($col['name'] == 'password')
+{{'{'}}!! input('password', '{{$col['name']}}', trans('admin.{{$modelLangFormat}}.columns.{{$col['name']}}'), '{{ implode('|', collect($col['frontendRules'])->reject(function($rule) use ($col) { return $rule === 'confirmed:'.$col['name'];})->toArray()) }}') !!}
+{{'{'}}!! input('password', 'password_confirmation', trans('admin.{{$modelLangFormat}}.columns.{{$col['name']}}_repeat'), '{{ implode('|', $col['frontendRules']) }}') !!}
+@elseif($col['type'] == 'date' && !in_array($col['name'], ['published_at']))
+{{'{'}}!! input('date', '{{$col['name']}}', trans('admin.{{$modelLangFormat}}.columns.{{$col['name']}}'), '{{ implode('|', $col['frontendRules']) }}', [
+"type" => "date"
+]) !!}
 @elseif($col['type'] == 'time')
-{{'{!!'}} input('date', $col['name'], trans('admin.'.$modelLangFormat.'.columns.'.$col['name']), implode('|', $col['frontendRules']), [
+{{'{'}}!! input('date', '{{$col['name']}}', trans('admin.{{$modelLangFormat}}.columns.{{$col['name']}}'), '{{ implode('|', $col['frontendRules']) }}', [
     "type" => "time"
 ]) !!}
 @elseif($col['type'] == 'datetime' && !in_array($col['name'], ['published_at']))
-{{'{!!'}} input('date', $col['name'], trans('admin.'.$modelLangFormat.'.columns.'.$col['name']), implode('|', $col['frontendRules']), [
+{{'{'}}!! input('date', '{{$col['name']}}', trans('admin.{{$modelLangFormat}}.columns.{{$col['name']}}'), '{{ implode('|', $col['frontendRules'])}}', [
     "type" => "datetime"
 ]) !!}
 @elseif($col['type'] == 'text' && in_array($col['name'], $wysiwygTextColumnNames))
-{{'{!!'}} input('editor', $col['name'], trans('admin.'.$modelLangFormat.'.columns.'.$col['name']), implode('|', $col['frontendRules'])) !!}
+{{'{'}}!! input('editor', '{{$col['name']}}', trans('admin.{{$modelLangFormat}}.columns.{{$col['name']}}'), '{{ implode('|', $col['frontendRules'])}}') !!}
 @elseif($col['type'] == 'text')
-{{'{!!'}} input('textarea', $col['name'], trans('admin.'.$modelLangFormat.'.columns.'.$col['name']), implode('|', $col['frontendRules'])) !!}
+{{'{'}}!! input('textarea', '{{$col['name']}}', trans('admin.{{$modelLangFormat}}.columns.{{$col['name']}}'), '{{ implode('|', $col['frontendRules'])}}') !!}
 @elseif($col['type'] == 'boolean')
-{{'{!!'}} input('checkbox', $col['name'], trans('admin.'.$modelLangFormat.'.columns.'.$col['name']), implode('|', $col['frontendRules'])) !!}
-@elseif($col['type'] == 'json')<div class="row">
+{{'{'}}!! input('checkbox', '{{$col['name']}}', trans('admin.{{$modelLangFormat}}.columns.{{$col['name']}}'), '{{ implode('|', $col['frontendRules'])}}') !!}
+@elseif($col['type'] == 'json')
+<div class="row">
     @@foreach($locales as $locale)
         <div class="col-md" v-show="shouldShowLangGroup('@{{ $locale }}')" v-cloak>
             <div class="form-group row align-items-center" :class="{'has-danger': errors.has('{{ $col['name'] }}_@{{ $locale }}'), 'has-success': fields.{{ $col['name'] }}_@{{ $locale }} && fields.{{ $col['name'] }}_@{{ $locale }}.valid }">
@@ -61,13 +57,8 @@
         </div>
     @@endforeach
 </div>
-@elseif(!in_array($col['name'], ['published_at']))<div class="form-group row align-items-center" :class="{'has-danger': errors.has('{{ $col['name'] }}'), 'has-success': fields.{{ $col['name'] }} && fields.{{ $col['name'] }}.valid }">
-    <label for="{{ $col['name'] }}" class="col-form-label text-md-right" :class="isFormLocalized ? 'col-md-4' : 'col-md-2'">{{'{{'}} trans('admin.{{ $modelLangFormat }}.columns.{{ $col['name'] }}') }}</label>
-        <div :class="isFormLocalized ? 'col-md-4' : 'col-md-9 col-xl-8'">
-        <input type="text" v-model="form.{{ $col['name'] }}" v-validate="'{{ implode('|', $col['frontendRules']) }}'" @input="validate($event)" class="form-control" :class="{'form-control-danger': errors.has('{{ $col['name'] }}'), 'form-control-success': fields.{{ $col['name'] }} && fields.{{ $col['name'] }}.valid}" id="{{ $col['name'] }}" name="{{ $col['name'] }}" placeholder="{{'{{'}} trans('admin.{{ $modelLangFormat }}.columns.{{ $col['name'] }}') }}">
-        <div v-if="errors.has('{{ $col['name'] }}')" class="form-control-feedback form-text" v-cloak>{{'@{{'}} errors.first('{{ $col['name'] }}') }}</div>
-    </div>
-</div>
+@elseif(!in_array($col['name'], ['published_at']))
+{{'{'}}!! input('text', '{{$col['name']}}', trans('admin.{{$modelLangFormat}}.columns.{{$col['name']}}'), '{{ implode('|', $col['frontendRules'])}}') !!}
 @endif
 @endif
 

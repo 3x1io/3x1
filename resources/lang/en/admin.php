@@ -576,5 +576,31 @@ return [
         ],
     ],
 
+    'customer' => [
+        'title' => 'Customers',
+
+        'actions' => [
+            'index' => 'Customers',
+            'create' => 'New Customer',
+            'edit' => 'Edit :name',
+        ],
+
+        'columns' => [
+            'id' => 'ID',
+            'name' => 'Name',
+            'email' => 'Email',
+            'phone' => 'Phone',
+            'address' => 'Address',
+            'signature' => 'Signature',
+            'last_attends' => 'Last attends',
+            'profile' => 'Profile',
+            'activated' => 'Activated',
+            'blocked' => 'Blocked',
+            'in' => 'In',
+            'out' => 'Out',
+            
+        ],
+    ],
+
     // Do not delete me :) I'm used for auto-generation
 ];

@@ -212,12 +212,11 @@ if(!function_exists('vue_form_js')){
     }
 }
 if(!function_exists('list_fn')){
-    function list_fn($type, $name, $url=null, $options=[]){
+    function list_fn($type, $name, $options=[]){
         return block('list.' . $type, [
             "type" => $type,
             "name" => $name,
-            "options"=> $options,
-            "url" => $url
+            "options"=> $options
         ]);
     }
 }

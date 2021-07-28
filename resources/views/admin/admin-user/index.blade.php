@@ -105,12 +105,12 @@
                                         {!! list_fn('action', 'activated') !!}
                                     </td>
                                     <td >
-                                        {!! list_fn('action', 'forbidden', '', [
+                                        {!! list_fn('action', 'forbidden', [
                                             "bg"=> "danger"
                                         ]) !!}
                                     </td>
                                     <td >@{{ item.language }}</td>
-                                    <td >{!! list_fn('date', 'last_login_at', '', [
+                                    <td >{!! list_fn('date', 'last_login_at', [
                                             "type" => "datetime"
                                     ]) !!}</td>
 

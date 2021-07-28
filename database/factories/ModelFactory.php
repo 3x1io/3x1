@@ -426,3 +426,23 @@ $factory->define(App\Models\Block::class, static function (Faker\Generator $fake
         
     ];
 });
+/** @var  \Illuminate\Database\Eloquent\Factory $factory */
+$factory->define(App\Models\Customer::class, static function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->firstName,
+        'email' => $faker->email,
+        'phone' => $faker->sentence,
+        'address' => $faker->text(),
+        'signature' => $faker->text(),
+        'last_attends' => $faker->date(),
+        'profile' => $faker->sentence,
+        'activated' => $faker->boolean(),
+        'blocked' => $faker->boolean(),
+        'in' => $faker->randomFloat,
+        'out' => $faker->randomFloat,
+        'created_at' => $faker->dateTime,
+        'updated_at' => $faker->dateTime,
+        
+        
+    ];
+});

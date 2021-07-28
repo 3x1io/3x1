@@ -20,10 +20,6 @@ Route::get('/', function(){
     return view('welcome');
 });
 
-Route::get('admin/test', function(){
-    return view('admin.test');
-});
-
 if(\Illuminate\Support\Facades\Schema::hasTable('settings')){
     if(setting('themes.name')){
         $path = base_path('routes/themes') . '/' . setting('themes.name') .'.php';
