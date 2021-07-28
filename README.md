@@ -1,3 +1,10 @@
+# 3x1 Framework
+
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-sitemap.svg?style=flat-square)](https://packagist.org/packages/3x1io/3x1)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+![Test Status](https://img.shields.io/github/workflow/status/spatie/laravel-sitemap/run-tests?label=tests)
+![Code Style Status](https://img.shields.io/github/workflow/status/spatie/laravel-sitemap/Check%20&%20fix%20styling?label=code%20style)
+[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-sitemap.svg?style=flat-square)](https://packagist.org/packages/3x1io/3x1)
 
 <br />
 <p align="center">
