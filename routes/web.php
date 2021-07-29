@@ -62,6 +62,9 @@ Route::middleware(['auth:' . config('admin-auth.defaults.guard'), 'admin', 'dev'
         Route::get('/themes',                                             'HelperController@themes')->name('themes');
         Route::post('/themes',                                             'HelperController@saveThemes')->name('save-themes');
         Route::get('/themes/active',                                             'HelperController@themeActive')->name('theme-active');
+        Route::get('/settings/sitemap',                                             'HelperController@sitemap')->name('sitemap');
+        Route::get('/backups',                                             'HelperController@backups')->name('backups');
+        Route::post('/backups',                                             'HelperController@saveBackups')->name('saveBackups');
     });
 });
 

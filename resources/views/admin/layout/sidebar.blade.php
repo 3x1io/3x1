@@ -53,6 +53,7 @@
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/payment') }}"><i class="nav-icon icon-credit-card"></i> {{ __('Payments') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/email') }}"><i class="nav-icon icon-envelope-letter"></i> {{ __('Email') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('admin/services') }}"><i class="nav-icon icon-share"></i> {{ __('Services') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('admin/backups') }}"><i class="nav-icon icon-cloud-download"></i> {{ __('Backups') }}</a></li>
                 </ul>
             </li>
             <li class="nav-item"><a class="nav-link" href="{{ url('admin/settings') }}"><i class="nav-icon icon-settings"></i> {{ __('Settings') }}</a></li>

@@ -7,7 +7,7 @@
     <div class="card">
         <div class="card-header">
             <i class="icon icon-cloud-download"></i>
-            {{__('Backups')}}
+            {{__('Backups')}} <span class="badge badge-danger"><i class="fa fa-info"></i> {{__('Under Development')}}</span>
 
             <div class="pull-right">
                 <form method="POST" action="{{url('admin/backups')}}">

@@ -39,10 +39,18 @@ class HelperController extends Controller
     }
 
     public function backups(){
-        $getBackups = File::allFiles(storage_path('app/Laravel'));
+        $exists = File::exists(storage_path('app/Laravel'));
+        if($exists){
+            $getBackups = File::allFiles(storage_path('app/Laravel'));
+        }
+        else {
+            $getBackups = [];
+        }
+
         return view('admin.setting.backups', [
             'backups' => $getBackups
         ]);
+
     }
 
     public function saveBackups(Request $request){
@@ -51,34 +59,18 @@ class HelperController extends Controller
             if($getFile){
                 return response()->file($request->get('path'));
             }
-
         }
         else {
-            exec('cd ' . base_path() . ' && /opt/homebrew/Cellar/php@7.4/7.4.15/bin/php artisan backup:run', $output, $code);
+            Artisan::call('backup:run');
             toast(__('Backup Run!'),'success');
             return back();
         }
     }
 
     public function sitemap(){
-        return view('admin.setting.sitemap');
-    }
-
-    public function saveSitemap(Request $request){
-
-        setting_update('site.name', $request->get('site_name'));
-        setting_update('site.description', $request->get('site_description'));
-        setting_update('site.keywords', $request->get('site_keywords'));
-        setting_update('site.author', $request->get('site_author'));
-        $file = $request->file('site_logo');
-        if($file){
-            $imageName = time().'.'.$request->site_logo->extension();
-            $request->site_logo->move(public_path('images/settings'), $imageName);
-            setting_update('site.logo', '/images/settings/'. $imageName);
-        }
-
-        toast(__('SEO Updates!'),'success');
-        return back();
+        Artisan::call('sitemap:generate');
+        toast(__('Sitemap Has Been Generated!'),'success');
+        return redirect()->to('admin/settings');
     }
 
     public function modules(){

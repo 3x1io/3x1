@@ -18,6 +18,7 @@
                 {!! setting_show('site.description', __('Site Description'), 'textarea') !!}
                 {!! setting_show('site.keywords', __('Site Keywords'), 'textarea') !!}
                 <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> {{__('Save')}}</button>
+                <a href="{{url('admin/settings/sitemap')}}" class="btn btn-success"><i class="fa fa-sitemap"></i> {{__('Generate Sitemap')}}</a>
             </form>
         </div>
     </div>
