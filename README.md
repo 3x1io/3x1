@@ -75,6 +75,10 @@ npm i
 ```bash
 npm run dev
 ```
+8. Go To Login
+go to `BASE_URL/admin/login`
+
+use this username `admin@3x1.io` and password `3x1@2021`
 
 ### Generator
 you can easy generate CURD operations with controllers and views and routes and every thing with just one command
