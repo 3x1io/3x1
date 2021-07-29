@@ -45,7 +45,7 @@ class AuthController extends Controller
             else {
                 Mail::to($checkEx)->send(new EmailCode($checkEx->code));
                 if(!empty($request->get('phone'))){
-                    send_sms('3U4hIoTFq6FZddMbJ9gZWFRw2','+201069706892',  $checkEx->phone, 'Your Code IS: '. $checkEx->code);;
+                    send_sms(setting('messagebird.access_key'),setting('messagebird.originator'),  $checkEx->phone, 'Your Code IS: '. $checkEx->code);;
                 }
 
                 return  response()->json([
@@ -74,7 +74,7 @@ class AuthController extends Controller
 
                 Mail::to($user)->send(new EmailCode($user->code));
                 if(!empty($user->phone)){
-                    send_sms('3U4hIoTFq6FZddMbJ9gZWFRw2','+201069706892',  $user->phone, 'Your Code IS: '. $user->code);
+                    send_sms(setting('messagebird.access_key'),setting('messagebird.originator'),  $user->phone, 'Your Code IS: '. $user->code);
                 }
 
                 return response()->json([
@@ -117,7 +117,7 @@ class AuthController extends Controller
                 }
 
                 if(!empty($request->get('phone'))){
-                    send_sms('3U4hIoTFq6FZddMbJ9gZWFRw2','+201069706892',  $checkEx->phone, 'Your Code IS: '. $checkEx->code);
+                    send_sms(setting('messagebird.access_key'),setting('messagebird.originator'),  $checkEx->phone, 'Your Code IS: '. $checkEx->code);
                 }
 
                 return response()->json([
