@@ -17,6 +17,7 @@
     <a href="https://github.com/3x1io/3x1"><strong>Explore the docs »</strong></a>
 
   </p>
+  <img src="https://3x1.io/uploads/Capture.PNG">
 </p>
 
 ### Review This Packages First
