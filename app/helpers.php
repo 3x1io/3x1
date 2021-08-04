@@ -96,6 +96,14 @@ if(!function_exists('theme_assets')){
         return url('themes/'.$theme_name.'/'.$path);
     }
 }
+
+if(!function_exists('theme_namespace')){
+    function theme_namespace(){
+        $theme_name = str_replace('themes.', '', setting('themes.path'));
+        return 'Themes\\' . $theme_name . '\\controllers';
+    }
+}
+
 if(!function_exists('show_menu')){
     function show_menu($key){
         $menu = \App\Models\Setting::where('key', $key)->first();

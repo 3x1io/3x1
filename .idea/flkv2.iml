@@ -2,20 +2,21 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/app/Core/brackets/media/src" isTestSource="false" packagePrefix="Brackets\Media\" />
       <sourceFolder url="file://$MODULE_DIR$/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
-      <sourceFolder url="file://$MODULE_DIR$/app/Core/brackets/craftable/src" isTestSource="false" packagePrefix="Brackets\Craftable\" />
       <sourceFolder url="file://$MODULE_DIR$/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
-      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" packagePrefix="Tests\" />
-      <sourceFolder url="file://$MODULE_DIR$/app/Core/brackets/admin-auth/src" isTestSource="false" packagePrefix="Brackets\AdminAuth\" />
-      <sourceFolder url="file://$MODULE_DIR$/app/Core/brackets/admin-listing/src" isTestSource="false" packagePrefix="Brackets\AdminListing\" />
       <sourceFolder url="file://$MODULE_DIR$/app/Core/brackets/advanced-logger/src" isTestSource="false" packagePrefix="Brackets\AdvancedLogger\" />
-      <sourceFolder url="file://$MODULE_DIR$/app/Core/brackets/admin-generator/src" isTestSource="false" packagePrefix="Brackets\AdminGenerator\" />
-      <sourceFolder url="file://$MODULE_DIR$/app/Core/brackets/admin-ui/src" isTestSource="false" packagePrefix="Brackets\AdminUI\" />
-      <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" packagePrefix="App\" />
-      <sourceFolder url="file://$MODULE_DIR$/Modules" isTestSource="false" packagePrefix="Modules\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/Core/brackets/craftable/src" isTestSource="false" packagePrefix="Brackets\Craftable\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/Core/brackets/media/src" isTestSource="false" packagePrefix="Brackets\Media\" />
       <sourceFolder url="file://$MODULE_DIR$/app/Core/brackets/translatable/src" isTestSource="false" packagePrefix="Brackets\Translatable\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/Core/brackets/admin-ui/src" isTestSource="false" packagePrefix="Brackets\AdminUI\" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/Core/brackets/admin-generator/src" isTestSource="false" packagePrefix="Brackets\AdminGenerator\" />
+      <sourceFolder url="file://$MODULE_DIR$/Modules" isTestSource="false" packagePrefix="Modules\" />
+      <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/app/Core/brackets/admin-auth/src" isTestSource="false" packagePrefix="Brackets\AdminAuth\" />
+      <sourceFolder url="file://$MODULE_DIR$/resources/views/themes" isTestSource="false" packagePrefix="Themes\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/Core/brackets/admin-listing/src" isTestSource="false" packagePrefix="Brackets\AdminListing\" />
       <sourceFolder url="file://$MODULE_DIR$/app/Core/brackets/admin-translations/src" isTestSource="false" packagePrefix="Brackets\AdminTranslations\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/arrilot/laravel-widgets" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/asm89/stack-cors" />

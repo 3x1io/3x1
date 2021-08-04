@@ -83,7 +83,8 @@
             "Brackets\\Craftable\\": "app/Core/brackets/craftable/src/",
             "Brackets\\Media\\": "app/Core/brackets/media/src/",
             "Brackets\\Translatable\\": "app/Core/brackets/translatable/src/",
-            "Modules\\": "Modules/"
+            "Modules\\": "Modules/",
+            "Themes\\": "resources/views/themes"
         }
     },
     "autoload-dev": {
