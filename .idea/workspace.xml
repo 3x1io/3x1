@@ -20,15 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c257a0bb-d5f4-4b89-b88b-65e872c9e734" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/themes/Controller3x1/controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/themes/Controller3x1/info.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/themes/Controller3x1/layouts/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/themes/Controller3x1/pages/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/themes/Controller3x1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/flkv2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flkv2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/forms/end_form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/forms/js.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/forms/start_form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +248,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/routes/themes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/components" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -261,19 +256,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Sites\3x1\resources\views\components" />
+      <recent name="D:\Sites\3x1\routes\themes" />
+      <recent name="D:\Sites\3x1\resources\views\themes" />
+      <recent name="D:\Sites\3x1\resources\views" />
+      <recent name="D:\Sites\3x1\app\Mail" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/admin/layout/parts" />
       <recent name="$PROJECT_DIR$/database/migrations" />
       <recent name="$PROJECT_DIR$/Modules/Core/Database/Migrations" />
       <recent name="$PROJECT_DIR$/Modules/Location/Database/Migrations" />
       <recent name="$PROJECT_DIR$/Modules/Location/Database" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Sites\3x1\routes\themes" />
-      <recent name="D:\Sites\3x1\resources\views\themes" />
-      <recent name="D:\Sites\3x1\resources\views" />
-      <recent name="D:\Sites\3x1\app\Mail" />
-      <recent name="D:\Sites\3x1\app\Http\Middleware" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.web.php">
@@ -332,7 +327,8 @@
       <workItem from="1627568184560" duration="1310000" />
       <workItem from="1627572251658" duration="3920000" />
       <workItem from="1627644590663" duration="29000" />
-      <workItem from="1628067734752" duration="466000" />
+      <workItem from="1628067734752" duration="1703000" />
+      <workItem from="1628244321860" duration="72000" />
     </task>
     <servers />
   </component>
