@@ -63,6 +63,19 @@ return [
             ]) : [],
         ],
 
+        'wordpress' => [
+            'driver'    => 'mysql',
+            'host'      => env('DB_HOST', '127.0.0.1'),
+            'database' => env('WORDPRESS_DB', 'forge'),
+            'username' => env('WORDPRESS_USERNAME', 'forge'),
+            'password' => env('WORDPRESS_PASSWORD', ''),
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => env('WORDPRESS_PREFIX', 'wp_'),
+            'strict'    => false,
+            'engine'    => null,
+        ],
+
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),

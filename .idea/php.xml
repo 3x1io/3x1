@@ -186,6 +186,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/hautelook/phpass" />
+      <path value="$PROJECT_DIR$/vendor/jgrossi/corcel" />
+      <path value="$PROJECT_DIR$/vendor/thunderer/shortcode" />
     </include_path>
   </component>
   <component name="PhpUnit">

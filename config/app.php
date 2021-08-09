@@ -187,7 +187,6 @@ return [
         App\Providers\TenancyServiceProvider::class,
         NotificationChannels\Messagebird\MessagebirdServiceProvider::class,
         NZTim\Mailchimp\MailchimpServiceProvider::class,
-
         Brackets\AdminAuth\AdminAuthServiceProvider::class,
         Brackets\AdminGenerator\AdminGeneratorServiceProvider::class,
         Brackets\AdminListing\AdminListingServiceProvider::class,
@@ -199,8 +198,7 @@ return [
         Brackets\Translatable\TranslatableServiceProvider::class,
         Weidner\Goutte\GoutteServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
-
-
+        Corcel\Laravel\CorcelServiceProvider::class,
     ],
 
     /*

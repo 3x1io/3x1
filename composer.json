@@ -21,6 +21,7 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "infyomlabs/adminlte-templates": "^2.0",
         "infyomlabs/laravel-generator": "8.0.x-dev",
+        "jgrossi/corcel": "^5.0",
         "joisarjignesh/bigbluebutton": "^1.1",
         "laracasts/utilities": "^3.2",
         "laravel-notification-channels/messagebird": "^3.0",
