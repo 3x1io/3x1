@@ -40,6 +40,8 @@ Thanks for this packages that's create our framework base
 - [Laravel Media Library](https://github.com/spatie/laravel-medialibrary) [Media & Upload]
 - [Laravel Backup](https://github.com/spatie/laravel-backup) [Backup]
 - [Laravel WebSockets](https://github.com/beyondcode/laravel-websockets) [WebSockets]
+- [Corcel ](https://github.com/corcel/corcel) [Wordpress Link]
+
 ### Installation
 1. create a new 3x1 project
 ```bash
