@@ -16,7 +16,7 @@
   ![Code Style Status](https://img.shields.io/github/workflow/status/spatie/laravel-sitemap/Check%20&%20fix%20styling?label=code%20style)
 
 
-<img src="https://i.ibb.co/KwQSCyL/1.png" alt="1" style="margin-left:auto; margin-right:auto; display: block" />
+<img src="https://i.ibb.co/KwQSCyL/1.png" width="100%" alt="1" style="margin-left:auto; margin-right:auto; display: block" />
 
 ## Official Documentation
 Documentation for 3x1 Framework can be found on the <a href="https://framework.3x1.io/docs"><b>3x1 website</b></a>.
