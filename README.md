@@ -6,7 +6,7 @@
 <br />
 <p align="center">
   <a href="https://3x1.io">
-    <img src='https://svgshare.com/i/WCM.svg' width="150px;">
+    <img src='https://svgshare.com/i/bbA.svg' width="150px;">
   </a>
 
   <h3 align="center">3x1 Framework</h3>
@@ -17,7 +17,6 @@
     <a href="https://github.com/3x1io/3x1"><strong>Explore the docs »</strong></a>
 
   </p>
-  <img src="https://3x1.io/uploads/Capture.PNG">
 </p>
 
 ### Review This Packages First
