@@ -96,14 +96,12 @@ if(!function_exists('theme_assets')){
         return url('themes/'.$theme_name.'/'.$path);
     }
 }
-
 if(!function_exists('theme_namespace')){
     function theme_namespace(){
         $theme_name = str_replace('themes.', '', setting('themes.path'));
         return 'Themes\\' . $theme_name . '\\controllers';
     }
 }
-
 if(!function_exists('show_menu')){
     function show_menu($key){
         $menu = \App\Models\Setting::where('key', $key)->first();
@@ -116,7 +114,6 @@ if(!function_exists('show_menu')){
 
     }
 }
-//Location Function
 if(!function_exists('dollar')){
     function dollar($total){
         $getDollar = setting('$');
@@ -129,6 +126,18 @@ if(!function_exists('dollar')){
     }
 }
 //Notifications Helpers
+if(!function_exists('send_sms')){
+    function send_sms($api, $from, $to, $message){
+        $MessageBird = new Client($api);
+        $sms = new Message();
+        $sms->originator = $from;
+        $sms->recipients = array($to);
+        $sms->body = $message;
+        $sms->type = 'sms';
+
+        $MessageBird->messages->create($sms);
+    }
+}
 if(!function_exists('pusher')){
     function pusher($title, $url, $description='',$type='push', $icon="fa fa-bell" ){
         $options = array(
@@ -215,21 +224,7 @@ if(!function_exists('user_can')){
     }
 }
 
-if(!function_exists('send_sms')){
-    function send_sms($api, $from, $to, $message){
-        $MessageBird = new Client($api);
-        $sms = new Message();
-        $sms->originator = $from;
-        $sms->recipients = array($to);
-        $sms->body = $message;
-        $sms->type = 'sms';
-
-        $MessageBird->messages->create($sms);
-    }
-}
-
-
-//HTML
+//Blocks Fn
 if(!function_exists('input')){
     function input($type, $name, $label,$validation=false,$options=[],$custom=false,$placeholder=false, $id=false, $class='form-control', $ref=false, $model=false){
         return block('form.' . $type, [
@@ -278,7 +273,6 @@ if(!function_exists('list_fn')){
         ]);
     }
 }
-
 if(!function_exists('block')){
     function block($key, $data=[]) {
         $block = \App\Models\Block::where('key', $key)->first();

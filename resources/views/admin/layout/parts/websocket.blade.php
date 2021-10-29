@@ -1,3 +1,4 @@
+<script src="https://js.pusher.com/7.0/pusher.min.js"></script>
 <script>
     var pusher = new Pusher('12345', {
         wsHost: '3x1.test',
@@ -14,24 +15,6 @@
         },
         enabledTransports: ['ws', 'flash', 'wss'],
     });
-    // pusher.connection.bind('state_change', states => {
-    //     console.log("Channels current state is " + states.current)
-    // });
-    //
-    // pusher.connection.bind('connected', () => {
-    //     console.log("Channels current state is connected")
-    // });
-    //
-    // pusher.connection.bind('disconnected', () => {
-    //     console.log("Channels current state is disconnected")
-    // })
-    //
-    // pusher.connection.bind('error', event => {
-    //     if (event.error.data.code === 4100) {
-    //         console.log("Maximum connection limit exceeded!")
-    //         throw new Error("Over capacity");
-    //     }
-    // });
     Pusher.logToConsole = false;
     var channel = pusher.subscribe('push-notifications');
     channel.bind('App\\Events\\PushNotification', function(data) {

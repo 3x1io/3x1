@@ -15,7 +15,7 @@
     Full Stack Web Framework Build in Laravel & Craftable
     <br />
     <a href="https://github.com/3x1io/3x1"><strong>Explore the docs »</strong></a>
-
+    <img src="https://i.ibb.co/KwQSCyL/1.png" alt="1" border="0" />
   </p>
 </p>
 

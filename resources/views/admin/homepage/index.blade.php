@@ -1,30 +1,10 @@
 @extends('brackets/admin-ui::admin.layout.default')
 
 @section('body')
-    <div class="card">
-        <div class="card-header">
-            <i class="fa fa-dashboard"></i> {{__('Dashboard')}}
-        </div>
-        <div class="card-body">
-            <div class="row">
-                <div class="col-md-12">
-                    <form class="mb-3" method="GET" action="{{url('admin/search')}}">
-                        <div class="input-group">
-                            <input type="search" class="form-control" name="search" id="search" placeholder="{{__('What Are You Searching About?')}}">
-                            <span class="input-group-append">
-                        <select class="form-control" id="type" name="type">
-                            <option value="customer">{{__('Customer')}}</option>
-                            <option value="product">{{__('Product')}}</option>
-                        </select>
-                        <button type="submit" class="input-group-btn btn-primary"><i class="fa fa-search"></i> {{__('Search')}}</button>
-                    </span>
-                        </div>
-                    </form>
-                </div>
-            </div>
+    <x-card title="{{__('Dashboard')}}" icon="fa fa-dashboard">
             <div class="row">
                 <div class="col-sm-6 col-lg-3">
-                    <div class="card text-white bg-primary p-3">
+                    <div class="card text-white bg-primary p-3 border-0">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <div>
@@ -40,7 +20,7 @@
                 </div>
 
                 <div class="col-sm-6 col-lg-3">
-                    <div class="card text-white bg-info p-3">
+                    <div class="card text-white bg-info p-3 border-0">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <div>
@@ -56,7 +36,7 @@
                 </div>
 
                 <div class="col-sm-6 col-lg-3">
-                    <div class="card text-white bg-warning p-3">
+                    <div class="card text-white bg-warning p-3 border-0">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <div>
@@ -72,7 +52,7 @@
                 </div>
 
                 <div class="col-sm-6 col-lg-3">
-                    <div class="card text-white bg-danger p-3">
+                    <div class="card text-white bg-danger p-3 border-0">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <div>
@@ -87,49 +67,29 @@
                     </div>
                 </div>
             </div>
-            <table class="table table-responsive-sm table-hover table-outline">
-                <thead class="thead-light">
-                <tr>
-                    <th class="text-center">
-                        <i class="fa fa-users"></i>
-                    </th>
-                    <th>User</th>
-                    <th class="text-center">Country</th>
-                    <th>Usage</th>
-                    <th class="text-center">Payment Method</th>
-                    <th>Activity</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td class="text-center">
-                        <div class="c-avatar"><img class="avatar" src="{{url('placeholder.webp')}}" alt="user@email.com"><span class="c-avatar-status bg-success"></span></div>
-                    </td>
-                    <td>
-                        <div>Yiorgos Avraamu</div>
-                        <div class="small text-muted"><span>New</span> | Registered: Jan 1, 2015</div>
-                    </td>
-                    <td class="text-center">
-                        <i class="fa fa-flag"></i>
-                    </td>
-                    <td>
-                        <div class="clearfix">
-                            <div class="float-left"><strong>50%</strong></div>
-                            <div class="float-right"><small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small></div>
-                        </div>
-                        <div class="progress progress-xs">
-                            <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </td>
-                    <td class="text-center">
-                        <i class="fa fa-cc-visa"></i>
-                    </td>
-                    <td>
-                        <div class="small text-muted">Last login</div><strong>10 sec ago</strong>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+    </x-card>
+    <x-card title="{{__('Review This Packages First [3x1 Framework v1.07]')}}" icon="fa fa-info">
+        <h5>Thanks for this packages that's create our framework base <i class="fa fa-heart text-danger"></i></h5>
+        <ul>
+            <li><a href="https://www.getcraftable.com/" target="_blank"><b>Carftable</b> <small>[It's a Core Folder & CURD Generator & Admin Panel]</small></a></li>
+            <li><a href="https://www.infyom.com/open-source" target="_blank"><b>Infyom</b> <small>[APIs Scaffolding]</small></a></li>
+            <li><a href="https://github.com/milon/barcode" target="_blank"><b>Barcode</b> <small>[Generate Barcode]</small></a></li>
+            <li><a href="https://tenancyforlaravel.com/" target="_blank"><b>Tenancy</b> <small>[SaaS]</small></a></li>
+            <li><a href="https://github.com/creativeorange/gravatar" target="_blank"><b>Gravatar</b> <small>[Profile Avatar]</small></a></li>
+            <li><a href="https://github.com/realrashid/sweet-alert" target="_blank"><b>Sweet Alert</b> <small>[Alerts]</small></a></li>
+            <li><a href="https://laravel.com/" target="_blank"><b>Laravel</b> <small>[Main Framework]</small></a></li>
+            <li><a href="https://laravel.com/docs/8.x/sanctum" target="_blank"><b>Laravel Sanctum</b> <small>[APIs Token Auth]</small></a></li>
+            <li><a href="https://laravel.com/docs/8.x/socialite" target="_blank"><b>Laravel Socialite</b> <small>[Social Media Links]</small></a></li>
+            <li><a href="https://spatie.be/docs/laravel-permission/v4/introduction" target="_blank"><b>Laravel Permission</b> <small>[User ACL]</small></a></li>
+            <li><a href="https://packagist.org/packages/arrilot/laravel-widgets" target="_blank"><b>Laravel Widgets</b> <small>[Widgets]</small></a></li>
+            <li><a href="https://nwidart.com/laravel-modules/v6/introduction" target="_blank"><b>Laravel Module</b> <small>[MVC Modular Arch]</small></a></li>
+            <li><a href="https://laravel-excel.com/" target="_blank"><b>Laravel Excel</b> <small>[Import & Export Excel]</small></a></li>
+            <li><a href="https://github.com/spatie/laravel-sitemap" target="_blank"><b>Laravel Sitemap</b> <small>[Sitemap Generator]</small></a></li>
+            <li><a href="https://github.com/spatie/laravel-translatable" target="_blank"><b>Laravel Translatable</b> <small>[Translation]</small></a></li>
+            <li><a href="https://github.com/spatie/laravel-medialibrary" target="_blank"><b>Laravel Media Library</b> <small>[Media & Upload]</small></a></li>
+            <li><a href="https://github.com/spatie/laravel-backup" target="_blank"><b>Laravel Backup</b> <small>[Backup]</small></a></li>
+            <li><a href="https://github.com/beyondcode/laravel-websockets" target="_blank"><b>Laravel WebSockets</b> <small>[WebSockets]</small></a></li>
+            <li><a href="https://github.com/corcel/corcel" target="_blank"><b>Corcel</b> <small>[Wordpress Link]</small></a></li>
+        </ul>
+    </x-card>
 @endsection

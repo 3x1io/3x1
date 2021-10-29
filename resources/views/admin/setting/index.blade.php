@@ -1,4 +1,4 @@
-@extends('brackets/admin-ui::admin.layout.default')
+@extends('layouts.main')
 
 @section('title', trans('admin.setting.actions.index'))
 
@@ -11,7 +11,7 @@
 
         <div class="row">
             <div class="col">
-                <div class="card">
+                <div class="card border-0 shadow-sm">
                     <div class="card-header">
                         <i class="fa fa-align-justify"></i> {{ trans('admin.setting.actions.index') }}
                         <a class="btn btn-primary btn-sm pull-right m-b-0 ml-2" href="{{ url('admin/settings/export') }}" role="button"><i class="fa fa-file-excel-o"></i>&nbsp; {{ trans('admin.setting.actions.export') }}</a>

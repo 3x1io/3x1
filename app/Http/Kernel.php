@@ -3,6 +3,7 @@
 namespace App\Http;
 
 use App\Http\Middleware\DeveloperMiddleware;
+use App\Http\Middleware\SecretMiddleware;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -64,6 +65,7 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-        'dev' => DeveloperMiddleware::class
+        'dev' => DeveloperMiddleware::class,
+        'secret' => SecretMiddleware::class
     ];
 }

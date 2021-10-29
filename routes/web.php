@@ -22,7 +22,7 @@ Route::get('/', function(){
 
 try {
     if(setting('themes.name')){
-        $path = base_path('routes/themes') . '/' . setting('themes.name') .'.php';
+        $path = base_path('resources/views/themes') . '/' . setting('themes.name') .'/routes/web.php';
         if(\Illuminate\Support\Facades\File::exists($path)){
             include $path;
         }

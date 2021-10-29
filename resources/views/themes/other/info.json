@@ -1,0 +1,11 @@
+{
+    "name": "Other Theme",
+    "ar": "ثيم اخر للتجربة",
+    "description": "Other Theme For testing",
+    "description_ar": "ثيم اخر لتجربة التنقل بين الثيمات",
+    "keywords": [],
+    "aliases": "other",
+    "files": [],
+    "requires": [],
+    "image": "images/3.png"
+}

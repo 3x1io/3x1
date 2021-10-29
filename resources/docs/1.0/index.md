@@ -1,0 +1,16 @@
+- ## Get Started
+    - [Overview](/{{route}}/{{version}}/overview)
+    - [Environment](/{{route}}/{{version}}/env)
+    - [Installation](/{{route}}/{{version}}/installation)
+- ## Features
+    - [Generator](/{{route}}/{{version}}/generator)
+    - [Widgets](/{{route}}/{{version}}/widgets)
+    - [Themes Manager](/{{route}}/{{version}}/themes-manager)
+    - [Locations](/{{route}}/{{version}}/locations)
+    - [Notifications](/{{route}}/{{version}}/notifications)
+    - [Settings](/{{route}}/{{version}}/settings)
+    - [PayTabs](/{{route}}/{{version}}/paytabs)
+    - [MessageBird](/{{route}}/{{version}}/messagebird)
+    - [Blocks](/{{route}}/{{version}}/blocks)
+    - [APIs](/{{route}}/{{version}}/apis)
+

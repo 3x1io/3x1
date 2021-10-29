@@ -36,24 +36,31 @@ class AuthController extends Controller
         $validator = Validator::make($request->all(), $rules);
         if ($validator->fails()) {
             $checkEx = User::where('email', $request->get('email'))->orWhere('phone', $request->get('phone'))->first();
-            if($checkEx->email_verified_at){
+            if($checkEx){
+                if($checkEx->email_verified_at){
+                    return  response()->json([
+                        "success" => false,
+                        "message" =>  $validator->messages()
+                    ]);
+                }
+                else {
+                    Mail::to($checkEx)->send(new EmailCode($checkEx->code));
+//                    if(!empty($request->get('phone'))){
+//                        send_sms(setting('messagebird.access_key'),setting('messagebird.originator'),  $checkEx->phone, 'Your Code IS: '. $checkEx->code);
+//                    }
+
+                    return  response()->json([
+                        "success" => false,
+                        'message' => __('your activated link has been send to your email')
+                    ]);
+                }
+            }
+            else {
                 return  response()->json([
                     "success" => false,
                     "message" =>  $validator->messages()
-                ]);
+                ], 403);
             }
-            else {
-                Mail::to($checkEx)->send(new EmailCode($checkEx->code));
-                if(!empty($request->get('phone'))){
-                    send_sms(setting('messagebird.access_key'),setting('messagebird.originator'),  $checkEx->phone, 'Your Code IS: '. $checkEx->code);;
-                }
-
-                return  response()->json([
-                    "success" => false,
-                    'message' => __('your activated link has been send to your email')
-                ]);
-            }
-
         }
         else{
             $user = User::create([
@@ -116,9 +123,9 @@ class AuthController extends Controller
                     Mail::to($checkEx)->send(new EmailCode($checkEx->code));
                 }
 
-                if(!empty($request->get('phone'))){
-                    send_sms(setting('messagebird.access_key'),setting('messagebird.originator'),  $checkEx->phone, 'Your Code IS: '. $checkEx->code);
-                }
+//                if(!empty($request->get('phone'))){
+//                    send_sms(setting('messagebird.access_key'),setting('messagebird.originator'),  $checkEx->phone, 'Your Code IS: '. $checkEx->code);
+//                }
 
                 return response()->json([
                     'success' => true,
@@ -277,9 +284,6 @@ class AuthController extends Controller
                 if($request->has('username')){
                     $user->username = $request->get('username');
                 }
-                if($request->has('roles')){
-                    $user->roles()->sync($request->get('roles'));
-                }
 
                 $user->save();
 
@@ -292,8 +296,7 @@ class AuthController extends Controller
                             "name" => $user->name,
                             "email" => $user->email,
                             "phone" => $user->phone,
-                            "username" => $user->username,
-                            "roles" => $user->load('roles')
+                            "username" => $user->username
                         ]
                     ]
                 ]);
@@ -358,7 +361,7 @@ class AuthController extends Controller
         else {
             $user = User::where("email", $request->get('email'))->first();
             if($user){
-                if (!empty($user->code) && $user->code === $request->get('code')) {
+                if (!empty($user->code) && $user->code == $request->get('code')) {
                     $user->email_verified_at = Carbon::now();
                     $user->activated = true;
                     $user->code = null;
@@ -443,7 +446,7 @@ class AuthController extends Controller
         else {
             $isExUser = User::where('email', $request->get('email'))->first();
             if($isExUser){
-                if($isExUser->code === $request->get('code')){
+                if($isExUser->code == $request->get('code')){
                     $isExUser->password = Hash::make($request->get('password'));
                     $isExUser->save();
 

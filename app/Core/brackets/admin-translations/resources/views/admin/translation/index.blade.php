@@ -1,4 +1,4 @@
-@extends('brackets/admin-ui::admin.layout.default')
+@extends('layouts.main')
 
 @section('title', trans('brackets/admin-translations::admin.title'))
 
@@ -209,7 +209,7 @@
                     </div>
                 </modal>
 
-                <div class="card">
+                <div class="card border-0 shadow-sm">
                     <div class="card-header">
                         <i class="fa fa-align-justify"></i> {{ trans('brackets/admin-translations::admin.index.title') }}
                         <a class="btn btn-primary btn-sm pull-right m-b-0 ml-2" href="#" @click.prevent="showImport()"
