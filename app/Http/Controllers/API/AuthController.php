@@ -7,19 +7,13 @@ use App\Mail\EmailReset;
 use App\Mail\EmailWelcome;
 use App\Models\User;
 use Carbon\Carbon;
-use Illuminate\Auth\Events\PasswordReset;
-use Illuminate\Auth\Events\Registered;
-use Illuminate\Auth\Events\Verified;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
-use MessageBird\Client;
-use MessageBird\Objects\Message;
 
 class AuthController extends Controller
 {

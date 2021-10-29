@@ -29,16 +29,16 @@ class AppServiceProvider extends ServiceProvider
     {
         try {
 
-//            Config::set('mail.mailers.smtp', [
-//                'transport' => 'smtp',
-//                'host' => setting('email.host'),
-//                'port' => setting('email.port'),
-//                'encryption' => setting('email.encryption'),
-//                'username' => setting('email.username'),
-//                'password' => setting('email.password'),
-//                'timeout' => null,
-//                'auth_mode' => null,
-//            ]);
+            Config::set('mail.mailers.smtp', [
+                'transport' => 'smtp',
+                'host' => setting('email.host'),
+                'port' => setting('email.port'),
+                'encryption' => setting('email.encryption'),
+                'username' => setting('email.username'),
+                'password' => setting('email.password'),
+                'timeout' => null,
+                'auth_mode' => null,
+            ]);
 
             Config::set('mail.from', [
                 'address' => setting('email.from'),
