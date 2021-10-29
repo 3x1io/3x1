@@ -1,5 +1,5 @@
-  <a href="https://3x1.io">
-    <img src='https://svgshare.com/i/bbA.svg' width="150px;">
+  <a href="https://3x1.io" align="center">
+    <img src='https://svgshare.com/i/bbA.svg' width="150px;" style="margin-left:auto; margin-right:auto; display: block" >
   </a>
 
   <h3 align="center">3x1 Framework</h3>
